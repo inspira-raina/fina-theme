@@ -114,8 +114,9 @@ footer {
 
 .navbar .navbar-nav > li.nav-item > a {
   color: #ffffff75;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
+  padding: 0 20px;
   text-transform: uppercase;
 }
 
@@ -152,16 +153,7 @@ footer {
   font-weight: 800;
 }
 
-header.masthead {
-  margin-bottom: 50px;
-  background: no-repeat center center;
-  background-color: #03aeBB;
-  background-attachment: scroll;
-  position: relative;
-  background-size: cover;
-}
-
-header.masthead .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -169,6 +161,15 @@ header.masthead .overlay {
   width: 100%;
   background-color: #212529;
   opacity: 0.5;
+}
+
+header.masthead {
+  margin-bottom: 50px;
+  background: no-repeat center center;
+  background-color: #03aeBB;
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
 }
 
 header.masthead .page-heading,
@@ -249,6 +250,102 @@ header.masthead .post-heading .meta a {
 
 .blog-section {
   margin-bottom: 10rem;
+}
+
+.trending-post .post-meta {
+  padding: 10px;
+  transition: transform .2s;
+}
+
+.trending-post .post-meta .category {
+  color: #46afbb;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.trending-post .post-meta .title {
+  color: #979899;
+}
+
+.trending-post .post-meta .meta {
+  color: #ada8a8;
+}
+
+.trending-post .post-meta .meta > span {
+  padding-right: 10px;
+}
+
+.trending-post .post-meta .meta > span.view {
+  padding-left: 10px;
+  border-left: 1px solid white;
+}
+
+.trending-post .post-summary {
+  padding: 10px;
+}
+
+.trending-post .post-link {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trending-post .post-link > a {
+  color: #46afbb;
+  padding: 10px 25px;
+  font-weight: 800;
+}
+
+.trending-post .post-link > a > span {
+  margin-right: 10px;
+}
+
+.featured-post {
+  cursor: pointer;
+  background-color: yellow;
+}
+
+.featured-post .post-meta {
+  padding: 20px;
+  transition: transform .2s;
+}
+
+.featured-post .post-meta .category {
+  color: white;
+  text-transform: uppercase;
+}
+
+.featured-post .post-meta .title {
+  color: white;
+}
+
+.featured-post .post-meta .meta {
+  color: white;
+}
+
+.featured-post .post-meta .meta > span {
+  padding-right: 10px;
+}
+
+.featured-post .post-meta .meta > span.view {
+  padding-left: 10px;
+  border-left: 1px solid white;
+}
+
+.featured-post .post-link {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.featured-post .post-link > a {
+  color: white;
+  padding: 10px 25px;
+  font-weight: 800;
+}
+
+.featured-post .post-link > a > span {
+  margin-right: 10px;
 }
 
 .post-grid {
