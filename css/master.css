@@ -247,6 +247,10 @@ header.masthead .post-heading .meta a {
   }
 }
 
+.blog-section {
+  margin-bottom: 10rem;
+}
+
 .post-grid {
   margin-bottom: 10rem;
 }
