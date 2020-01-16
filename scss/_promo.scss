@@ -38,10 +38,21 @@
 }
 
 
-#promo-detail {
-  margin-top: 10rem;
-  margin-bottom: 15rem;
+.promo-detail {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #f9fafb;
   .container {
-    border: 1px solid #f1f3f4;
+    border: 1px solid #eeee;
+    border-radius: 10px;
+    background-color: white;
+    .post-title {
+      font-size: 25pt;
+    }
+    .promo-periode {
+      color: #46afbb;
+      margin-bottom: 25px;
+      display: block;  
+    }
   }
 }
