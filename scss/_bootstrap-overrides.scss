@@ -1,0 +1,69 @@
+// Bootstrap overrides for this template
+.rounded {
+  border-radius: 10px !important;
+}
+
+.rounded-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.nav {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.nav-pills {
+  .nav-link {
+    font-weight: 800;
+    padding: 20px 30px 20px 30px;
+    text-transform: uppercase;
+    background-color: #e1f5f7;
+    &.active {
+      background-color: $primary;
+    }
+  }
+}
+
+.btn {
+  font-size: 16pt;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 7.5) !important;
+    border-color: darken($primary, 7.5) !important;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $primary;
+  color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 7.5) !important;
+    border-color: darken($primary, 7.5) !important;
+  }
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
+
+
+.bg-primary {
+  background-color: $primary !important;
+}

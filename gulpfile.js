@@ -58,6 +58,9 @@ function modules() {
   // Font Awesome Webfonts
   var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
     .pipe(gulp.dest('./vendor/fontawesome-free/webfonts'));
+  // Slick Slider
+  var fontAwesomeWebfonts = gulp.src('./node_modules/slick-carousel/slick/**/*')
+    .pipe(gulp.dest('./vendor/slick'));
   // jQuery
   var jquery = gulp.src([
       './node_modules/jquery/dist/*',
@@ -98,6 +101,8 @@ function js() {
     .src([
       './js/*.js',
       '!./js/*.min.js',
+      '!./js/contact_me.js',
+      '!./js/jqBootstrapValidation.js'
     ])
     .pipe(uglify())
     .pipe(header(banner, {

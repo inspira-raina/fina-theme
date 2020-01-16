@@ -1,0 +1,47 @@
+#promo-section {
+  margin-bottom: 10rem;
+}
+
+#deal,
+.deal-post {
+  .car-brand {
+    color: #b5b6b7;
+  }
+  .car-type {
+    font-weight: 100;
+  }
+  .car-price {
+    font-weight: 800;
+     font-size: 16pt;
+  }
+  .deal-meta {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #f1f3f4;
+    padding-top: 15px;
+    margin-top: 15px;
+    .deal-tenor {
+      font-size: 14pt;
+    }
+    .deal-rate {
+      font-weight: 800;
+      font-size: 20pt;
+      color: #f59733;
+    }
+  }
+}
+
+#promo {
+  .promo-periode {
+    color: #b5b6b7;
+  }
+}
+
+
+#promo-detail {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+  .container {
+    border: 1px solid #f1f3f4;
+  }
+}

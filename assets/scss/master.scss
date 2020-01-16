@@ -3,20 +3,15 @@
 @import "../vendor/fontawesome-free/css/all.min.css";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-// Core variables and mixins
-@import "base/variables.scss";
-@import "base/mixins.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "post.scss";
+@import "contact.scss";
+@import "footer.scss";
+@import "bootstrap-overrides.scss";
 
-// Global CSS
-@import "base/global.scss";
-
-// Components
-// @import "components/buttons.scss";
-@import "components/bootstrap-overrides.scss";
-@import "components/navbar.scss";
-
-// Layout
-@import "layout/masthead.scss";
-@import "layout/footer.scss";
-@import "layout/promo.scss";
-@import "layout/post.scss";
+// LAYOUT
+@import "promo.scss";
