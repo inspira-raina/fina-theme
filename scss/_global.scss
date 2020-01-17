@@ -1,7 +1,8 @@
 // Global styling for this template
 body {
-  color: $gray-900;
+  color: #1A1A1A;
   font-family: 'Open Sans', sans-serif;
+  background-color: $snow;
 }
 
 p {
@@ -23,8 +24,7 @@ h6 {
 }
 
 a {
-  color: $gray-900;
-  @include transition-all;
+  color: inherit;
   &:focus,
   &:hover {
     color: $primary;
@@ -34,13 +34,7 @@ a {
 
 blockquote {
   font-style: italic;
-  color: $gray-600;
-}
-
-.section-heading {
-  font-size: 36px;
-  font-weight: 700;
-  margin-top: 60px;
+  color: $primary;
 }
 
 .caption {
@@ -76,21 +70,17 @@ img::-moz-selection {
   background: transparent;
 }
 
-.title-block {
+.section-heading {
   display: flex;
   margin-bottom: 50px;
   align-items: center !important;
   justify-content: space-between !important;
 
-  h1 {
+  h2 {
     margin: 0;
     padding: 0;
+    font-size: 42pt;
     font-weight: normal;
     display: inline-block;
   }
-}
-
-footer {
-  // color: white;
-  background-color: #333847;
 }

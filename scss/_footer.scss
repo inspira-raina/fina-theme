@@ -1,15 +1,23 @@
 // Styling for the footer
+.btn-up {
+  width: 62px;
+  height: 62px;
+  background: url(/img/button_top.svg);
+  background-size: cover;
+  position: absolute;
+}
+
 footer {
   font-size: 10pt;
   padding: 65px 0 50px;
-  background-color: #333847;
+  background-color: $slate_gray;
 
   .footer-devider {
-    border-top: 1px solid white;
+    border-top: 1px solid $light_gray;
   }
 
   .footer-section__title {
-    color: white;
+    color: $light_gray;
     font-size: 18px;
     font-weight: 800;
     margin-top: 10px;

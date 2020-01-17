@@ -18,7 +18,7 @@ const pkg = require('./package.json');
 
 // Set the banner content
 const banner = ['/*!\n',
-  ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
+  ' * Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
   ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
   ' * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n',
   ' */\n',
@@ -54,10 +54,10 @@ function modules() {
     .pipe(gulp.dest('./vendor/bootstrap'));
   // Font Awesome CSS
   var fontAwesomeCSS = gulp.src('./node_modules/@fortawesome/fontawesome-free/css/**/*')
-    .pipe(gulp.dest('./vendor/fontawesome-free/css'));
+    .pipe(gulp.dest('./vendor/fontawesome/css'));
   // Font Awesome Webfonts
   var fontAwesomeWebfonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
-    .pipe(gulp.dest('./vendor/fontawesome-free/webfonts'));
+    .pipe(gulp.dest('./vendor/fontawesome/webfonts'));
   // Slick Slider
   var fontAwesomeWebfonts = gulp.src('./node_modules/slick-carousel/slick/**/*')
     .pipe(gulp.dest('./vendor/slick'));

@@ -1,6 +1,6 @@
 // FONTS
 @import "../vendor/bootstrap/css/bootstrap.min.css";
-@import "../vendor/fontawesome-free/css/all.min.css";
+@import "../vendor/fontawesome/css/all.min.css";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 @import "variables.scss";
@@ -9,7 +9,7 @@
 @import "navbar.scss";
 @import "masthead.scss";
 @import "post.scss";
-@import "contact.scss";
 @import "footer.scss";
 @import "bootstrap-overrides.scss";
 @import "promo.scss";
+@import "package.scss";
