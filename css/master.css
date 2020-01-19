@@ -641,6 +641,10 @@ footer .store-logo__link {
   background-color: #03aeBB !important;
 }
 
+.promo-section {
+  margin-bottom: 5rem;
+}
+
 #promo-grid {
   margin-bottom: 10rem;
 }
