@@ -72,15 +72,53 @@ img::-moz-selection {
 
 .section-heading {
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
   align-items: center !important;
   justify-content: space-between !important;
 
   h2 {
     margin: 0;
     padding: 0;
-    font-size: 42pt;
+    font-size: 25pt;
     font-weight: normal;
     display: inline-block;
+  }
+}
+
+#package_filter {
+  border: none;
+  border-radius: 10px;
+  background-color: $sky_blue;
+  .card-header {
+    color: $dark_teal;
+    font-weight: 800;
+    font-size: 20pt;
+    padding: 20px 10px;
+    border-bottom: 2px solid $primary;
+    background-color: transparent;
+  }
+  .card-body {
+    background-color: transparent;
+  }
+}
+
+.section-default {
+  margin-bottom: 5rem !important;
+  &.mb-10 {
+    margin-bottom: 10rem !important;
+  }
+}
+
+.social-share-icon {
+  list-style: none;
+  li {
+    padding: 20px;
+    text-align: center;
+    &.list-header {
+      font-weight: 800;
+    }
+  }
+  i {
+    font-size: 25pt;
   }
 }

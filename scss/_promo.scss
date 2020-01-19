@@ -1,5 +1,8 @@
-#promo-section {
+#promo-grid {
   margin-bottom: 10rem;
+  .nav {
+    margin-top: 0;
+  }
 }
 
 #deal,
@@ -38,20 +41,21 @@
 }
 
 
-.promo-detail {
+#promo-detail {
   padding-top: 10rem;
   padding-bottom: 10rem;
-  background-color: #f9fafb;
+  background-color: $snow;
   .container {
-    border: 1px solid #eeee;
+    border: 1px solid $light_gray;
     border-radius: 10px;
-    background-color: white;
+    background-color: $white;
     .post-title {
-      font-size: 25pt;
+      font-size: 20pt;
+      margin-bottom: 15px;
     }
     .promo-periode {
-      color: #46afbb;
-      margin-bottom: 25px;
+      color: $primary;
+      margin-bottom: 15px;
       display: block;  
     }
   }

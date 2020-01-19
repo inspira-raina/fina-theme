@@ -1,10 +1,14 @@
 // Styling for the footer
 .btn-up {
-  width: 62px;
-  height: 62px;
-  background: url(/img/button_top.svg);
-  background-size: cover;
+  border: none;
+  padding: 5px 8px;
+  background-color: $white;
   position: absolute;
+  bottom: 0;
+  left: 0;
+  i {
+    color: $primary;
+  }
 }
 
 footer {
