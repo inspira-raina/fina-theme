@@ -102,25 +102,6 @@ img::-moz-selection {
   display: inline-block;
 }
 
-#package_filter {
-  border: none;
-  border-radius: 10px;
-  background-color: #E1F5F7;
-}
-
-#package_filter .card-header {
-  color: #007386;
-  font-weight: 800;
-  font-size: 20pt;
-  padding: 20px 10px;
-  border-bottom: 2px solid #03aeBB;
-  background-color: transparent;
-}
-
-#package_filter .card-body {
-  background-color: transparent;
-}
-
 .section-default {
   margin-bottom: 5rem !important;
 }
@@ -189,6 +170,34 @@ img::-moz-selection {
   color: white;
   font-size: 16px;
   font-weight: 800;
+}
+
+.form-header {
+  border: none;
+  border-radius: 10px;
+  background-color: #E1F5F7;
+}
+
+.form-header.card-header, .form-header.card-body {
+  padding: 2rem !important;
+}
+
+.form-control,
+.custom-select {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #B5B6B7;
+  background-color: transparent;
+  padding-left: 0;
+}
+
+.input-group-text {
+  background-color: transparent;
+  border: none;
+}
+
+.input-group-text i {
+  font-size: 19pt;
 }
 
 .overlay {
@@ -599,6 +608,7 @@ footer .store-logo__link {
 }
 
 .nav-pills .nav-link.active {
+  color: #FFFFFF !important;
   background-color: #03aeBB;
 }
 
@@ -763,4 +773,9 @@ footer .store-logo__link {
 
 #package-detail .container .package-feature > li {
   color: #03aeBB;
+}
+
+.form-package {
+  border: none;
+  background-color: #E1F5F7;
 }

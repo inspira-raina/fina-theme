@@ -56,29 +56,49 @@
     <div class="container py-5">
       <div class="form-header card mt-5">
         <div class="card-header">
-          Temukan Paket Menarik di Wilayah Anda
+          Wujudkan Mobil Impian Anda Bersama Kami
         </div>
-        <div class="card-body">
-          <form name="sentMessage" id="contactForm" novalidate="">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls">
-                <label>Kota</label>
-                <input type="text" class="form-control" placeholder="Name" id="name" required=""
-                  data-validation-required-message="Please enter your name." aria-invalid="false">
-                <p class="help-block text-danger"></p>
+        <form class="card-body" name="sentMessage" id="contactForm" novalidate="">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="">Anggaran</label>
+                <select class="custom-select">
+                  <option selected>500 - 700 juta</option>
+                </select>
               </div>
             </div>
-          </form>
-        </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="">Merek</label>
+                <select class="custom-select">
+                  <option selected>Honda</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="">Model</label>
+                <select class="custom-select">
+                  <option selected>Civic</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <button class="btn btn-info">Cari</button>
+            </div>
+          </div>          
+        </form>
       </div>
     </div>
   </header>
 
   <!-- Main Content -->
-  <div>
+  <section class="section-default">
     <div class="container">
-      <div class="title-block">
-        <h1>Top Pake Sales</h1>
+      <div class="section-heading">
+        <h2>Paket Pembiayaan</h2>
+        <a class="btn btn-outline-primary" href="paket.html">Lihat Semua</a>
       </div>
       <div class="row">
         <div class="package col-md-4">
@@ -125,12 +145,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   
-  <div class="album py-5">
+  <section class="section-default">
     <div class="container">
-      <div class="title-block">
-        <h1>Paket Pembiayaan Lainya</h1>
+      <div class="section-heading">
+        <h2>Paket Pembiayaan</h2>
+        <a class="btn btn-outline-primary" href="paket.html">Lihat Semua</a>
       </div>
       <div class="row">
         <div class="package col-md-4">
@@ -175,51 +196,9 @@
             </div>
           </div>
         </div>
-        <div class="package col-md-4">
-          <div class="card">
-            <img class="img-fluid" src="img/package/01-thumbnail.jpg" alt="">
-            <div class="card-body">
-              <a href="">
-                <h5 class="card-title">Bunga Turun Kredit Mobil Baru</h5>
-              </a>
-              <ul>
-                <li>Free asuransi 1 tahun</li>
-                <li>Free biaya admin</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="package col-md-4">
-          <div class="card">
-            <img class="img-fluid" src="img/package/01-thumbnail.jpg" alt="">
-            <div class="card-body">
-              <a href="">
-                <h5 class="card-title">Bunga Turun Kredit Mobil Baru</h5>
-              </a>
-              <ul>
-                <li>Free asuransi 1 tahun</li>
-                <li>Free biaya admin</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="package col-md-4">
-          <div class="card">
-            <img class="img-fluid" src="img/package/01-thumbnail.jpg" alt="">
-            <div class="card-body">
-              <a href="">
-                <h5 class="card-title">Bunga Turun Kredit Mobil Baru</h5>
-              </a>
-              <ul>
-                <li>Free asuransi 1 tahun</li>
-                <li>Free biaya admin</li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Footer -->
   <footer>

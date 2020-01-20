@@ -85,23 +85,6 @@ img::-moz-selection {
   }
 }
 
-#package_filter {
-  border: none;
-  border-radius: 10px;
-  background-color: $sky_blue;
-  .card-header {
-    color: $dark_teal;
-    font-weight: 800;
-    font-size: 20pt;
-    padding: 20px 10px;
-    border-bottom: 2px solid $primary;
-    background-color: transparent;
-  }
-  .card-body {
-    background-color: transparent;
-  }
-}
-
 .section-default {
   margin-bottom: 5rem !important;
   &.mb-10 {
