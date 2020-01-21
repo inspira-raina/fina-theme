@@ -44,7 +44,9 @@
         </ul>        
       </div>
       <div class="d-none d-md-block">
-        <img src="img/ic_profile.svg" alt="User">
+        <a href="#" data-toggle="modal" data-target="#login-modal">
+          <img src="img/ic_profile.svg" alt="User">
+        </a>
         <!-- <span>Name</span> -->
       </div>
     </div>
@@ -296,6 +298,41 @@
       <img src="img/bcaf_ojk.svg" height="35" alt="Terdaftar & Diawasi OJK">
     </div>
   </section>
+
+  
+  <div class="modal fade bd-example-modal-lg" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col-5" style="background-image: url(img/package/02-thumbnail.jpg);">
+            asdasdsa
+          </div>
+          <div class="col-7">
+            <form action="">
+              <h3>Masuk</h3>
+              <div class="form-group">
+                <label for="">User ID</label>
+                <input type="text" class="form-control" placeholder="Masukan User ID/ Email Anda">
+              </div>
+              <div class="form-group">
+                <label for="">Password</label>
+                <input type="text" class="form-control" placeholder="Masukan Password Anda">
+              </div>
+              <div class="form-group">
+                <p class="form-control-startic"> <a href="#">Lupa Password?</a> <span>Belum punya akun? <a href="#">Daftar</a></span></p>
+                
+                
+              </div>
+              <div class="text-right">
+                <button class="btn btn-outline-primary">Masuk</button>
+              </div>                
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
