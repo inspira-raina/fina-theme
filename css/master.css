@@ -806,7 +806,8 @@ footer .store-logo__link {
 }
 
 .form-header .form-group .custom-select {
-  background: none;
+  background-color: transparent;
+  background: url(../img/chev-down.png) 95% center no-repeat !important;
   border: none;
   border-radius: 0px;
   -webkit-border-radius: 0px;
