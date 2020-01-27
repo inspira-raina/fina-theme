@@ -172,34 +172,6 @@ img::-moz-selection {
   font-weight: 800;
 }
 
-.form-header {
-  border: none;
-  border-radius: 10px;
-  background-color: #E1F5F7;
-}
-
-.form-header.card-header, .form-header.card-body {
-  padding: 2rem !important;
-}
-
-.form-control,
-.custom-select {
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid #B5B6B7;
-  background-color: transparent;
-  padding-left: 0;
-}
-
-.input-group-text {
-  background-color: transparent;
-  border: none;
-}
-
-.input-group-text i {
-  font-size: 19pt;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -335,7 +307,8 @@ header.masthead .post-heading .meta a {
 }
 
 .trending-post .post-link {
-  margin-top: 5rem;
+  margin-top: 1rem;
+  padding: 1em 0;
   display: flex;
   justify-content: flex-end;
 }
@@ -383,7 +356,8 @@ header.masthead .post-heading .meta a {
 }
 
 .featured-post .post-link {
-  margin-top: 5rem;
+  margin-top: 2rem;
+  margin-right: -15px;
   display: flex;
   justify-content: flex-end;
 }
@@ -653,6 +627,14 @@ footer .store-logo__link {
   background-color: #03aeBB !important;
 }
 
+.table-striped tbody td {
+  border-top: 0 !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F5FCFC !important;
+}
+
 .promo-section {
   margin-bottom: 5rem;
 }
@@ -729,53 +711,143 @@ footer .store-logo__link {
   display: block;
 }
 
-.package .card {
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
-  border: 1px solid #F1F3F4;
+.slick-dots {
+  bottom: -50px !important;
 }
 
-.package .card img {
-  border-radius: 10px;
+.slick-dots li.slick-active button:before {
+  color: #fff !important;
 }
 
-.package .card ul {
-  -webkit-padding-start: 1.25rem;
-  padding-inline-start: 1.25rem;
+.slick-dots li :before {
+  font-size: 15px !important;
 }
 
-.package .card ul li {
-  color: #03aeBB;
+.featured-post {
+  transition: all .3s ease;
 }
 
-#package-detail {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background-color: #F9FAFB;
+.featured-post:hover {
+  transform: scale(1.1);
+  z-index: 99;
 }
 
-#package-detail .container {
-  border: 1px solid #F1F3F4;
-  border-radius: 10px;
-  background-color: #FFFFFF;
+.featured-post:hover .overlay {
+  opacity: 0.7;
 }
 
-#package-detail .container .package-title {
-  font-size: 20pt;
-  margin-bottom: 15px;
+.featured-post:hover .post-link a {
+  background-color: rgba(3, 174, 187, 0.7);
 }
 
-#package-detail .container .package-feature {
-  padding: 0;
-  margin-bottom: 15px;
-  list-style-type: none;
+.featured-post:hover .post-link span {
+  opacity: 1;
 }
 
-#package-detail .container .package-feature > li {
-  color: #03aeBB;
+.featured-post .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #03aebb;
+  transition: all .3s ease;
 }
 
-.form-package {
+.featured-post .post-link {
+  color: #fff;
+}
+
+.featured-post .post-link span {
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.featured-post .post-link span, .featured-post .post-link img {
+  z-index: 99;
+  display: inline-block;
+  position: relative;
+}
+
+.btn-up {
+  right: 5rem !important;
+}
+
+.form-header {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-header .card-header {
+  font-weight: bold;
+  color: #03aebb;
+  font-size: 20px;
+  border-bottom: solid 2px #03aebb;
+}
+
+.form-header .form-group label {
+  color: #9b9999;
+  font-size: 14px;
+}
+
+.form-header .form-group .custom-select {
+  background: none;
   border: none;
-  background-color: #E1F5F7;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-bottom: solid 1px #9b9999;
+}
+
+.form-header .form-group .custom-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.form-header .form-group .custom-select:after {
+  content: '&#xf107';
+}
+
+.form-header .form-group .input-group-text {
+  background-color: transparent;
+  border: none;
+  padding: 0px 0 0 20px;
+}
+
+.form-header .form-group .input-group-text .flaticon-placeholder {
+  font-size: 25px;
+  color: #03aebb;
+}
+
+.form-header .form-group .input-group-text .flaticon-placeholder::before {
+  line-height: 2;
+}
+
+.package .card-body ul li {
+  color: #03aebb;
+}
+
+.car-brand {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.car-type {
+  font-size: 16px;
+}
+
+#deal .car-price, .deal-post .car-price {
+  font-size: 16px;
+}
+
+#deal .deal-meta, .deal-post .deal-meta {
+  align-items: center;
+}
+
+.card-body h5.card-title {
+  font-size: 16px;
+}
+
+.card-body .promo-periode {
+  font-size: 14px;
 }

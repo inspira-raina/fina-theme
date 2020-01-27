@@ -68,3 +68,18 @@
 .bg-primary {
   background-color: $primary !important;
 }
+
+// .table-striped tbody td {
+//   border-top: none !important;
+// }
+
+.table-striped {
+  tbody {
+    td {
+      border-top: 0 !important;
+    }
+    tr:nth-of-type(odd) {
+      background-color: $light_blue !important;    
+    }  
+  }    
+}
