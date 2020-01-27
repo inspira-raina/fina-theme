@@ -6,9 +6,9 @@
 
 @import url(../vendor/bootstrap/css/bootstrap.min.css);
 @import url(../vendor/fontawesome/css/all.min.css);
-@import url(../vendor/flaticon/flaticon.css);
-@import url(../vendor/flaticon2/flaticon.css);
-@import url(../vendor/line-awesome/css/line-awesome.css);
+@import url(../fonts/flaticon/flaticon.css);
+@import url(../fonts/flaticon2/flaticon.css);
+@import url(../fonts/line-awesome/css/line-awesome.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 body {
   color: #1A1A1A;
@@ -785,6 +785,21 @@ footer .store-logo__link {
   border-bottom: solid 2px #03aebb;
 }
 
+.form-header .input-col .row {
+  padding: 20px;
+}
+
+.form-header .button-col {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-left: solid 2px #03aebb;
+}
+
+.form-header .button-col .btn-info {
+  width: 100%;
+}
+
 .form-header .form-group label {
   color: #9b9999;
   font-size: 14px;
@@ -804,8 +819,14 @@ footer .store-logo__link {
   box-shadow: none;
 }
 
-.form-header .form-group .custom-select:after {
-  content: '&#xf107';
+.form-header .form-group .custom-select::after {
+  content: "\f11f";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  font-family: "LineAwesome";
 }
 
 .form-header .form-group .input-group-text {
@@ -821,6 +842,26 @@ footer .store-logo__link {
 
 .form-header .form-group .input-group-text .flaticon-placeholder::before {
   line-height: 2;
+}
+
+.package {
+  margin-bottom: 2em;
+}
+
+.package .card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden;
+}
+
+.package .card img.img-fluid {
+  border-bottom-left-radius: 10px;
+  -moz-border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
 }
 
 .package .card-body ul li {
