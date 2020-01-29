@@ -805,31 +805,6 @@ footer .store-logo__link {
   font-size: 14px;
 }
 
-.form-header .form-group .custom-select {
-  background-color: transparent;
-  background: url(../img/chev-down.png) 95% center no-repeat !important;
-  border: none;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  border-bottom: solid 1px #9b9999;
-}
-
-.form-header .form-group .custom-select:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.form-header .form-group .custom-select::after {
-  content: "\f11f";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 15px;
-  height: 15px;
-  font-family: "LineAwesome";
-}
-
 .form-header .form-group .input-group-text {
   background-color: transparent;
   border: none;
@@ -843,6 +818,31 @@ footer .store-logo__link {
 
 .form-header .form-group .input-group-text .flaticon-placeholder::before {
   line-height: 2;
+}
+
+.custom-select {
+  background-color: transparent;
+  background: url(../img/chev-down.png) 95% center no-repeat !important;
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-bottom: solid 1px #9b9999;
+}
+
+.custom-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-select::after {
+  content: "\f11f";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  font-family: "LineAwesome";
 }
 
 .package {
@@ -890,6 +890,10 @@ footer .store-logo__link {
   font-size: 16px;
 }
 
+.card-body ul {
+  padding-left: 15px;
+}
+
 .card-body .promo-periode {
   font-size: 14px;
 }
@@ -910,4 +914,82 @@ footer .store-logo__link {
 .package-feature li {
   list-style: none;
   color: #03aebb;
+}
+
+body {
+  position: relative;
+}
+
+.promo-slider {
+  max-width: 680px;
+  position: absolute;
+  right: 0;
+  top: 500px;
+}
+
+.promo-slider .trigger-button .button-search, .promo-slider .slider-header {
+  background-color: #03aebb;
+  color: #fff;
+  padding: 10px;
+  color: #fff;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.promo-slider .trigger-button, .promo-slider .trigger-button, .promo-slider .button-close {
+  cursor: pointer;
+}
+
+.promo-slider .trigger-button {
+  position: relative;
+}
+
+.promo-slider .trigger-button.hide {
+  display: none;
+}
+
+.promo-slider .trigger-button .button-search {
+  width: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.promo-slider .slider-header {
+  display: flex;
+  width: 680px;
+}
+
+.promo-slider .slider-header .button-search {
+  flex: 0 10%;
+  max-width: 100%;
+}
+
+.promo-slider .slider-header .slider-title {
+  flex: 0 70%;
+  max-width: 100%;
+}
+
+.promo-slider label {
+  width: 100%;
+}
+
+.promo-slider .slider-container {
+  display: none;
+}
+
+.promo-slider .slider-container.active {
+  display: block;
+}
+
+.promo-slider .slider-body {
+  padding: 20px;
+  width: 600px;
+  background-color: #e1f5f7;
+  margin-left: 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.promo-slider .slider-body .row .input-group {
+  padding: 20px 0;
 }

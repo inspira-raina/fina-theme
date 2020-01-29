@@ -12,4 +12,16 @@ $(document).ready(function() {
   $backToTop.on('click', function(e) {
     $("html, body").animate({scrollTop: 0}, 500);
   });
+
+  var $triggerSlide = $('.trigger-button > .button-search');
+  var $closeSlider = $('.slider-header > .button-close');
+  $triggerSlide.on('click',function() {
+    $('.slider-container').slideToggle('active');
+    $('.trigger-button').toggleClass('hide');
+  });
+
+  $closeSlider.on('click', function() {
+    $('.slider-container').slideToggle();
+    $('.trigger-button').toggleClass('hide');
+  })
 });
