@@ -949,7 +949,7 @@ body {
 }
 
 .promo-slider .trigger-button .button-search {
-  width: 100px;
+  width: 100px !important;
   position: absolute;
   right: 0;
 }
