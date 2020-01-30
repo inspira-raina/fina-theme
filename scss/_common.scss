@@ -1,0 +1,281 @@
+.slick-dots {
+  bottom : -50px!important;
+  li.slick-active {
+    button:before {
+      color: #fff!important;
+    }
+  }
+
+  li {
+    :before {
+      font-size: 15px!important;
+    }
+  }
+}
+
+// Post
+
+.featured-post {
+  transition: all .3s ease;
+  &:hover {
+    transform: scale(1.1);
+    z-index: 99;
+    .overlay {
+      opacity: 0.7;
+    }
+    .post-link {
+      a {
+        background-color: rgba(3, 174, 187, 0.7);
+      }
+      span {
+        opacity: 1;
+      }
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(3, 174, 187, 1);
+    transition: all .3s ease;
+  }
+
+  .post-link {
+    color: #fff;
+    span {
+      opacity: 0;
+      transition: all .3s ease;
+    }
+
+    span, img {
+      z-index: 99;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
+
+.btn-up {
+  right: 5rem!important;
+}
+
+//Paket page
+// Form Header
+.form-header {
+  background-color: rgba(255, 255, 255, 0.8);
+
+  .card-header {
+    font-weight: bold;
+    color: #03aebb;
+    font-size: 20px;
+    border-bottom: solid 2px #03aebb;
+  }
+  .input-col {
+    .row {
+      padding: 20px;
+    }
+  }
+  .button-col {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-left: solid 2px #03aebb;
+    .btn-info {
+      width: 100%;
+    }
+  }
+  .form-group {
+    label {
+      color: rgb(155, 153, 153);
+      font-size: 14px;
+    }
+    .input-group-text {
+      background-color: transparent;
+      border: none;
+      padding: 0px 0 0 20px;
+      .flaticon-placeholder {
+        font-size: 25px;
+        color: #03aebb;
+        &::before {
+          line-height: 2;
+        }
+      }
+    }
+  }
+}
+
+.custom-select {
+  background-color: transparent;
+  background: url(../img/chev-down.png) 95% center no-repeat!important;
+  border: none;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-bottom: solid 1px rgb(155, 153, 153);
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  &::after {
+    content: "\f11f";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    font-family: "LineAwesome";
+  }
+}
+
+.package {
+  margin-bottom: 2em;
+  .card {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    overflow: hidden;
+
+    img.img-fluid {
+      border-bottom-left-radius: 10px;
+      -moz-border-bottom-left-radius: 10px;
+      -webkit-border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      -moz-border-bottom-right-radius: 10px;
+      -webkit-border-bottom-right-radius: 10px;
+    }
+  }
+  .card-body {
+    ul {
+      li {
+        color: #03aebb;
+      }
+    }
+  }
+}
+
+// Promo Page
+
+.car-brand {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.car-type {
+  font-size: 16px;
+}
+#deal .car-price, .deal-post .car-price {
+  font-size: 16px;
+}
+
+#deal .deal-meta, .deal-post .deal-meta {
+  align-items: center;
+}
+
+.card-body {
+  h5.card-title {
+    font-size: 16px;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  .promo-periode {
+    font-size: 14px ;
+  }
+}
+
+.white-background {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  background-color: #fff;
+  margin: 170px 0 85px 0;
+}
+
+.package-feature {
+  margin: 20px 0;
+  padding: 0;
+  li {
+    list-style: none;
+    color: #03aebb;
+  }
+}
+
+body {
+  position: relative;
+}
+
+.promo-slider {
+  max-width: 680px;
+  position: absolute;
+  right: 0;
+  top: 500px;
+
+  .trigger-button .button-search, .slider-header {
+    background-color: #03aebb;
+    color: #fff;
+    padding: 10px;
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  .trigger-button, .trigger-button, .button-close {
+    cursor: pointer;
+  }
+
+  .trigger-button {
+    position: relative; 
+    &.hide {
+      display: none;
+    }
+
+    .button-search {
+      width: 100px!important;
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .slider-header {
+    display: flex;
+    width: 680px;
+    .button-search {
+      flex: 0 10%;
+      max-width: 100%;
+    }
+
+    .slider-title  {
+      flex: 0 70%;
+      max-width: 100%;
+    }
+  }
+  label {
+    width: 100%;
+  }
+
+  .slider-container {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  .slider-body {
+    padding: 20px;
+    width:600px;
+    background-color: #e1f5f7;
+    margin-left: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    .row {
+    .input-group {
+      padding: 20px 0;
+    }
+    }
+  }
+}
