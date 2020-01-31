@@ -388,6 +388,16 @@ body {
         border-radius: 0px;
         -moz-border-radius: 0px;
         -o-border-radius: 0px;
+        transition: all .3s ease;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-bottom: solid 1px #03aebb;
+        }
+        &::placeholder {
+          color: #cecece;
+        }
       }
     }
 
@@ -403,6 +413,18 @@ body {
     }
     .divider {
       margin: 0 5px;
+    }
+  }
+}
+
+#register-modal {
+  .button-text-wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .form-control-text {
+      flex: 1;
     }
   }
 }

@@ -1104,6 +1104,33 @@ body {
   border-radius: 0px;
   -moz-border-radius: 0px;
   -o-border-radius: 0px;
+  transition: all .3s ease;
+}
+
+.modal .form-login .form-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: solid 1px #03aebb;
+}
+
+.modal .form-login .form-group .form-control::-webkit-input-placeholder {
+  color: #cecece;
+}
+
+.modal .form-login .form-group .form-control::-moz-placeholder {
+  color: #cecece;
+}
+
+.modal .form-login .form-group .form-control:-ms-input-placeholder {
+  color: #cecece;
+}
+
+.modal .form-login .form-group .form-control::-ms-input-placeholder {
+  color: #cecece;
+}
+
+.modal .form-login .form-group .form-control::placeholder {
+  color: #cecece;
 }
 
 .modal .form-login .main-green {
@@ -1121,4 +1148,14 @@ body {
 
 .modal .form-login .divider {
   margin: 0 5px;
+}
+
+#register-modal .button-text-wrapper {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#register-modal .button-text-wrapper .form-control-text {
+  flex: 1;
 }
