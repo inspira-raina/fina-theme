@@ -1085,3 +1085,40 @@ body {
 #simulasi-result .table-result .action-wrapper .action-button i {
   border-bottom: dashed 1px #fff;
 }
+
+.modal .form-login {
+  padding: 40px 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.modal .form-login .form-title {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.modal .form-login .form-group .form-control {
+  border: none;
+  border-bottom: solid 1px #cecece;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.modal .form-login .main-green {
+  color: #03aebb;
+}
+
+.modal .form-login a.main-green {
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.modal .form-login a.main-green:hover {
+  color: #0e6a8f;
+}
+
+.modal .form-login .divider {
+  margin: 0 5px;
+}

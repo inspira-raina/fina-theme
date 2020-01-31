@@ -368,3 +368,41 @@ body {
     }
   }
 }
+
+.modal {
+  .form-login {
+    padding: 40px 0;
+    max-width: 80%; 
+    margin: 0 auto;
+
+    .form-title {
+      font-weight: 500;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      .form-control {
+        border: none;
+        border-bottom: solid 1px #cecece;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -o-border-radius: 0px;
+      }
+    }
+
+    .main-green {
+      color: #03aebb;
+    }
+    a.main-green {
+      text-decoration: none;
+      transition: all .3s ease;
+      &:hover {
+        color: #0e6a8f
+      }
+    }
+    .divider {
+      margin: 0 5px;
+    }
+  }
+}
