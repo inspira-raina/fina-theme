@@ -1150,12 +1150,12 @@ body {
   margin: 0 5px;
 }
 
-#register-modal .button-text-wrapper {
+#register-modal .button-text-wrapper, #forgot-password-modal .button-text-wrapper {
   margin-top: 20px;
   display: flex;
   align-items: center;
 }
 
-#register-modal .button-text-wrapper .form-control-text {
+#register-modal .button-text-wrapper .form-control-text, #forgot-password-modal .button-text-wrapper .form-control-text {
   flex: 1;
 }
