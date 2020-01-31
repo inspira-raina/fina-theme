@@ -279,3 +279,77 @@ body {
     }
   }
 }
+
+// Simulasi Page
+
+#form-simulasi-wrapper {
+  position: relative;
+  #form-simulasi {
+    position: absolute;
+    bottom: -60px;
+    width: 100%;
+    left: 0;
+    background:#e1f5f7;
+  }
+}
+
+#simulasi-result {
+  padding: 40px 0;
+
+  .white-background {
+    margin: 20px 0;
+    padding: 20px;
+  }
+
+  .result-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .addm-wrapper {
+      border-left: solid 5px #1a1a1a;
+      padding-left: 10px;
+      font-weight: bold;
+      margin-right: 20px;
+
+      &.active {
+        color: #03aebb;
+        border-left: solid 5px #03aebb;
+      }
+    }
+  }
+  .addm-explainer {
+    padding: 20px 0;
+  }
+
+  .table thead th {
+    border-bottom: none;
+  }
+
+  .table-result {
+    thead > tr {
+      background-color: #0e6a8f;
+      color: #fff;
+    }
+
+    tr.has-bg-color {
+      background-color: #e1f5f7!important;
+    }
+    .action-wrapper {
+      background-color: #03aebb;
+      color: #fff;
+      .action-button {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        .link-text {
+          margin-left: 10px;
+        }
+        i {
+          border-bottom: dashed 1px #fff;
+        }
+      }
+    }
+  }
+}
