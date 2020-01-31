@@ -290,6 +290,21 @@ body {
     width: 100%;
     left: 0;
     background:#e1f5f7;
+
+    .custom-select-wrapper {
+      display: flex;
+      align-items: center;
+
+      #select-percentage {
+        flex: 0 30%;
+        max-width: 100%;
+      }
+      #select-amount {
+        margin-left: 10px;
+        flex: 1;
+        max-width: 100%;
+      }
+    }
   }
 }
 

@@ -1006,6 +1006,22 @@ body {
   background: #e1f5f7;
 }
 
+#form-simulasi-wrapper #form-simulasi .custom-select-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#form-simulasi-wrapper #form-simulasi .custom-select-wrapper #select-percentage {
+  flex: 0 30%;
+  max-width: 100%;
+}
+
+#form-simulasi-wrapper #form-simulasi .custom-select-wrapper #select-amount {
+  margin-left: 10px;
+  flex: 1;
+  max-width: 100%;
+}
+
 #simulasi-result {
   padding: 40px 0;
 }
