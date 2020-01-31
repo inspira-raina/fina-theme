@@ -1022,7 +1022,7 @@ body {
 }
 
 #simulasi-result .result-nav .addm-wrapper {
-  border-left: solid 5px #1a1a1a;
+  border-left: solid 3px #1a1a1a;
   padding-left: 10px;
   font-weight: bold;
   margin-right: 20px;
@@ -1030,7 +1030,7 @@ body {
 
 #simulasi-result .result-nav .addm-wrapper.active {
   color: #03aebb;
-  border-left: solid 5px #03aebb;
+  border-left: solid 3px #03aebb;
 }
 
 #simulasi-result .addm-explainer {
