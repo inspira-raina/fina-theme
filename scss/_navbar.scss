@@ -1,7 +1,12 @@
 // Styling for the navbar
 .navbar {
   background-color: $primary !important;
-
+  .navbar-brand {
+    img {
+      height: 57px;
+      widows: auto;
+    }
+  }
   .navbar-nav {
     > li.nav-item {
       > a {
