@@ -131,6 +131,11 @@ img::-moz-selection {
   background-color: #03aeBB !important;
 }
 
+.navbar .navbar-brand img {
+  height: 57px;
+  widows: auto;
+}
+
 .navbar .navbar-nav > li.nav-item > a {
   color: #f1f3f4a6;
   font-size: 14px;
@@ -473,6 +478,11 @@ footer .footer-section__title::after {
 
 footer .footer__logo {
   margin-bottom: 35px;
+}
+
+footer .footer__logo img {
+  height: 57px;
+  width: auto;
 }
 
 footer .footer__contact {
