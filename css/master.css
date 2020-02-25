@@ -9,10 +9,9 @@
 @import url(../fonts/flaticon/flaticon.css);
 @import url(../fonts/flaticon2/flaticon.css);
 @import url(../fonts/line-awesome/css/line-awesome.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 body {
   color: #1A1A1A;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   background-color: #F9FAFB;
 }
 
@@ -31,8 +30,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-family: 'Open Sans';
 }
 
 a {
@@ -120,7 +119,7 @@ img::-moz-selection {
 }
 
 .social-share-icon li.list-header {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .social-share-icon i {
@@ -159,7 +158,7 @@ img::-moz-selection {
 
 .navbar .navbar-nav > li.active > a {
   color: #FFFFFF;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .navbar .navbar-nav > li.active > a::after {
@@ -174,7 +173,7 @@ img::-moz-selection {
 .navbar .navbar-text {
   color: white;
   font-size: 16px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .overlay {
@@ -280,7 +279,7 @@ header.masthead .post-heading .meta a {
 }
 
 .trending-post .post-meta {
-  padding: 10px;
+  padding: 1rem;
   transition: transform .2s;
 }
 
@@ -299,16 +298,20 @@ header.masthead .post-heading .meta a {
 }
 
 .trending-post .post-meta .meta > span {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 
 .trending-post .post-meta .meta > span.view {
-  padding-left: 10px;
+  padding-left: 1rem;
   border-left: 1px solid white;
 }
 
 .trending-post .post-summary {
-  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .trending-post .post-link {
@@ -320,12 +323,12 @@ header.masthead .post-heading .meta a {
 
 .trending-post .post-link > a {
   color: #46afbb;
-  padding: 10px 25px;
-  font-weight: 800;
+  padding: 1rem 25px;
+  font-weight: 700;
 }
 
 .trending-post .post-link > a > span {
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .featured-post {
@@ -334,7 +337,7 @@ header.masthead .post-heading .meta a {
 }
 
 .featured-post .post-meta {
-  padding: 20px;
+  padding: 1rem;
   transition: transform .2s;
 }
 
@@ -352,11 +355,11 @@ header.masthead .post-heading .meta a {
 }
 
 .featured-post .post-meta .meta > span {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 
 .featured-post .post-meta .meta > span.view {
-  padding-left: 10px;
+  padding-left: 1rem;
   border-left: 1px solid white;
 }
 
@@ -370,7 +373,7 @@ header.masthead .post-heading .meta a {
 .featured-post .post-link > a {
   color: white;
   padding: 10px 25px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .featured-post .post-link > a > span {
@@ -395,11 +398,11 @@ header.masthead .post-heading .meta a {
 }
 
 #post-grid .post-meta > span {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 
 #post-grid .post-meta > span.post-view {
-  padding-left: 10px;
+  padding-left: 1ren;
   border-left: 1px solid #B5B6B7;
 }
 
@@ -426,11 +429,11 @@ header.masthead .post-heading .meta a {
 }
 
 #post-detail .container .post-meta > span {
-  padding-right: 10px;
+  padding-right: 1rem;
 }
 
 #post-detail .container .post-meta > span.post-view {
-  padding-left: 10px;
+  padding-left: 1rem;
   border-left: 1px solid #B5B6B7;
 }
 
@@ -462,7 +465,7 @@ footer .footer-devider {
 footer .footer-section__title {
   color: #F1F3F4;
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   margin-top: 10px;
   margin-bottom: 40px;
 }
@@ -585,7 +588,7 @@ footer .store-logo__link {
 }
 
 .nav-pills .nav-link {
-  font-weight: 800;
+  font-weight: 700;
   padding: 20px 30px 20px 30px;
   text-transform: uppercase;
   background-color: #e1f5f7;
@@ -598,7 +601,7 @@ footer .store-logo__link {
 
 .btn {
   font-size: 10pt;
-  font-weight: 800;
+  font-weight: 700;
   padding: 15px 25px;
   letter-spacing: 1px;
   border-radius: 10px;
@@ -669,7 +672,7 @@ footer .store-logo__link {
 
 #deal .car-price,
 .deal-post .car-price {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 16pt;
 }
 
@@ -689,7 +692,7 @@ footer .store-logo__link {
 
 #deal .deal-meta .deal-rate,
 .deal-post .deal-meta .deal-rate {
-  font-weight: 800;
+  font-weight: 700;
   font-size: 20pt;
   color: #f59733;
 }
