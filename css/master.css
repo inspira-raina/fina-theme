@@ -126,6 +126,27 @@ img::-moz-selection {
   font-size: 25pt;
 }
 
+.font-reguler {
+  font-weight: 400;
+  font-size: larger;
+}
+
+.h1-reguler {
+  font-weight: 400;
+}
+
+.blue-color {
+  color: #46afbb;
+}
+
+.light-gray-color {
+  color: #F1F3F4;
+}
+
+.gray-color {
+  color: #B5B6B7;
+}
+
 .navbar {
   background-color: #03aeBB !important;
 }
@@ -705,13 +726,20 @@ footer .store-logo__link {
 }
 
 #promo-detail {
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 10rem;
   background-color: #F9FAFB;
 }
 
+#promo-detail nav {
+  margin-bottom: 3rem;
+}
+
+#promo-detail nav .breadcrumb {
+  background-color: transparent;
+}
+
 #promo-detail .container {
-  border: 1px solid #F1F3F4;
   border-radius: 10px;
   background-color: #FFFFFF;
 }
@@ -725,6 +753,113 @@ footer .store-logo__link {
   color: #03aeBB;
   margin-bottom: 15px;
   display: block;
+}
+
+#promo-detail .container.transparent {
+  background-color: transparent;
+}
+
+.color-list {
+  margin-top: 1.5rem;
+}
+
+.color-list a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 0.25rem;
+  border: 0;
+  margin-right: 1rem;
+}
+
+.color-list a.active {
+  border: 3px solid #03aeBB;
+}
+
+.color-list a.red {
+  background-color: red;
+}
+
+.color-list a.gray {
+  background-color: #B5B6B7;
+}
+
+.color-list a.black {
+  background-color: #1A1A1A;
+}
+
+.color-list a.orange {
+  background-color: orange;
+}
+
+.highlight-orange {
+  padding: 0.5rem;
+  background-color: rgba(255, 153, 51, 0.3);
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-size: large;
+  color: #5B5B5C;
+}
+
+.highlight-orange span {
+  color: #FF9933;
+}
+
+.promo-highlist ul {
+  margin: 0;
+  padding: 0;
+}
+
+.promo-highlist ul li {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.promo-highlist ul li i {
+  color: #46afbb;
+}
+
+.promo-spesifikasi {
+  padding: 0 2rem 2rem 3rem;
+}
+
+.promo-spesifikasi .nav {
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.promo-spesifikasi .nav.nav-tabs {
+  border: 0;
+}
+
+.promo-spesifikasi .nav.nav-tabs .nav-item .nav-link {
+  border: 0;
+  padding-left: 0;
+  color: #B5B6B7;
+}
+
+.promo-spesifikasi .nav.nav-tabs .nav-item .nav-link.active {
+  border: 0;
+  color: #03aeBB;
+}
+
+.promo-spesifikasi .nav.nav-tabs .nav-item .nav-link:hover {
+  border: 0;
+  color: #03aeBB;
+}
+
+.promo-spesifikasi .container-box {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #F1F3F4;
+  border: 3px solid #f1f1f1;
+  border-radius: 1rem;
+}
+
+.promo-spesifikasi .container-box i {
+  display: block;
+  color: #007386;
+  font-size: xx-large;
 }
 
 .slick-dots {
