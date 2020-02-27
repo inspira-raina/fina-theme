@@ -208,6 +208,7 @@ img::-moz-selection {
 
 header.masthead {
   margin-bottom: 5rem;
+  margin-top: 5.2rem;
   background: no-repeat center center;
   background-color: #03aeBB;
   background-attachment: scroll;
@@ -666,6 +667,18 @@ footer .store-logo__link {
 
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: #F5FCFC !important;
+}
+
+.carousel .carousel-indicators li {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-item-inside {
+  background-color: #03aeBB;
+  padding: 0 10%;
 }
 
 .promo-section {

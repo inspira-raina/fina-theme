@@ -83,3 +83,22 @@
     }  
   }    
 }
+
+.carousel {
+  .carousel-indicators {
+    li {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      .carousel-item-inside {
+        background-color: $teal;
+        padding: 0 10%;
+      }
+    }
+  }
+}
