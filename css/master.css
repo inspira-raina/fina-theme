@@ -151,6 +151,11 @@ img::-moz-selection {
   background-color: #FFF;
 }
 
+.setup-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .navbar {
   background-color: #03aeBB !important;
 }
@@ -391,10 +396,14 @@ header.masthead .post-heading .meta a {
 }
 
 .featured-post .post-link {
-  margin-top: 2rem;
-  margin-right: -15px;
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  bottom: 9px;
+  right: 0;
+  /*
+    margin-top: 2rem;
+    margin-right: -15px;
+    display: flex;
+    justify-content: flex-end; */
 }
 
 .featured-post .post-link > a {
