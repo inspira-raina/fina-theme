@@ -147,6 +147,10 @@ img::-moz-selection {
   color: #B5B6B7;
 }
 
+.background-white {
+  background-color: #FFF;
+}
+
 .navbar {
   background-color: #03aeBB !important;
 }
@@ -301,7 +305,7 @@ header.masthead .post-heading .meta a {
 }
 
 .trending-post .post-meta {
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
   transition: transform .2s;
 }
 
@@ -338,7 +342,7 @@ header.masthead .post-heading .meta a {
 
 .trending-post .post-link {
   margin-top: 1rem;
-  padding: 1em 0;
+  padding: 2em 0 1rem;
   display: flex;
   justify-content: flex-end;
 }
@@ -355,6 +359,7 @@ header.masthead .post-heading .meta a {
 
 .featured-post {
   cursor: pointer;
+  min-height: 18rem;
   background-color: yellow;
 }
 
@@ -650,6 +655,18 @@ footer .store-logo__link {
   color: #FFFFFF;
   background-color: #028b95 !important;
   border-color: #028b95 !important;
+}
+
+.btn-white {
+  font-size: 10pt;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: #FFF;
+  color: #03aeBB;
+  border-color: transparent;
+  text-transform: uppercase;
 }
 
 .btn-lg {
@@ -990,6 +1007,7 @@ footer .store-logo__link {
   background-color: transparent;
   background: url(../img/chev-down.png) 95% center no-repeat !important;
   border: none;
+  color: #bbb;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -1118,6 +1136,7 @@ body {
 }
 
 .promo-slider .trigger-button .button-search {
+  font-size: x-large;
   width: 100px !important;
   position: absolute;
   right: 0;
@@ -1130,13 +1149,15 @@ body {
 }
 
 .promo-slider .slider-header .button-search {
+  font-size: x-large;
   flex: 0 10%;
   max-width: 100%;
 }
 
 .promo-slider .slider-header .slider-title {
-  flex: 0 70%;
+  flex: 0 80%;
   max-width: 100%;
+  padding-top: 5px;
 }
 
 .promo-slider label {

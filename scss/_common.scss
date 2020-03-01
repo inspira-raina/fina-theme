@@ -113,6 +113,7 @@
   background-color: transparent;
   background: url(../img/chev-down.png) 95% center no-repeat!important;
   border: none;
+  color: #bbb;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -240,6 +241,7 @@ body {
     }
 
     .button-search {
+      font-size: x-large;
       width: 100px!important;
       position: absolute;
       right: 0;
@@ -253,13 +255,15 @@ body {
     -moz-box-shadow: -5px -5px 30px -10px rgba(0,0,0,0.4);
     box-shadow: -5px -5px 30px -10px rgba(0,0,0,0.4);
     .button-search {
+      font-size: x-large;
       flex: 0 10%;
       max-width: 100%;
     }
 
     .slider-title  {
-      flex: 0 70%;
+      flex: 0 80%;
       max-width: 100%;
+      padding-top: 5px;
     }
   }
   label {

@@ -5,7 +5,7 @@
 
 .trending-post {
   .post-meta {
-    padding: 1rem;
+    padding: 2rem 1rem 1rem;
     transition: transform .2s;
     .category {
       color: #46afbb;
@@ -35,7 +35,7 @@
   }
   .post-link {
     margin-top: 1rem;
-    padding: 1em 0;
+    padding: 2em 0 1rem;
     display: flex;
     justify-content: flex-end;
     > a {
@@ -55,6 +55,7 @@
 
 .featured-post {
   cursor: pointer;
+  min-height: 18rem;
   background-color: yellow;
   .post-meta {
     padding: 1rem;
