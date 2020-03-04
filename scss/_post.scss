@@ -5,7 +5,7 @@
 
 .trending-post {
   .post-meta {
-    padding: 10px;
+    padding: 2rem 1rem 1rem;
     transition: transform .2s;
     .category {
       color: #46afbb;
@@ -18,29 +18,33 @@
     .meta {
       color: #ada8a8;
       > span {
-        padding-right: 10px;
+        padding-right: 1rem;
         &.view {
-          padding-left: 10px;
+          padding-left: 1rem;
           border-left: 1px solid white;
         }
       }    
     }
   }
   .post-summary {
-    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
   .post-link {
     margin-top: 1rem;
-    padding: 1em 0;
+    padding: 2em 0 1rem;
     display: flex;
     justify-content: flex-end;
     > a {
       color: #46afbb;
-      padding: 10px 25px;
-      font-weight: 800;
+      padding: 1rem 25px;
+      font-weight: 700;
       > span {
         // display: none;
-        margin-right: 10px;
+        margin-right: 1rem;
       }
       // > img {
       //   margin-left: 10px;
@@ -51,9 +55,10 @@
 
 .featured-post {
   cursor: pointer;
+  min-height: 18rem;
   background-color: yellow;
   .post-meta {
-    padding: 20px;
+    padding: 1rem;
     transition: transform .2s;
     .category {
       color: white;
@@ -65,9 +70,9 @@
     .meta {
       color: white;
       > span {
-        padding-right: 10px;
+        padding-right: 1rem;
         &.view {
-          padding-left: 10px;
+          padding-left: 1rem;
           border-left: 1px solid white;
         }
       }    
@@ -85,14 +90,18 @@
   //   }
   // }
   .post-link {
+    position: absolute;
+    bottom: 9px;
+    right: 0;
+    /*
     margin-top: 2rem;
     margin-right: -15px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; */
     > a {
       color: white;
       padding: 10px 25px;
-      font-weight: 800;
+      font-weight: 700;
       > span {
         // display: none;
         margin-right: 10px;
@@ -119,9 +128,9 @@
   .post-meta {
     color: $gray;
     > span {
-      padding-right: 10px;
+      padding-right: 1rem;
       &.post-view {
-        padding-left: 10px;
+        padding-left: 1ren;
         border-left: 1px solid $gray;
       }
     }    
@@ -144,9 +153,9 @@
       color: $primary;
       margin-bottom: 15px;
       > span {
-        padding-right: 10px;
+        padding-right: 1rem;
         &.post-view {
-          padding-left: 10px;
+          padding-left: 1rem;
           border-left: 1px solid $gray;
         }
       }    

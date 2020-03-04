@@ -7,6 +7,9 @@
   .nav {
     margin-top: 0;
   }
+  .card {
+    border-color: #f1f1f1;
+  }
 }
 
 #deal,
@@ -18,7 +21,7 @@
     font-weight: 100;
   }
   .car-price {
-    font-weight: 800;
+    font-weight: 700;
      font-size: 16pt;
   }
   .deal-meta {
@@ -31,7 +34,7 @@
       font-size: 14pt;
     }
     .deal-rate {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 20pt;
       color: #f59733;
     }
@@ -46,11 +49,16 @@
 
 
 #promo-detail {
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 10rem;
   background-color: $snow;
+  nav {
+    margin-bottom: 3rem;
+    .breadcrumb {
+      background-color: transparent;
+    }
+  }
   .container {
-    border: 1px solid $light_gray;
     border-radius: 10px;
     background-color: $white;
     .post-title {
@@ -61,6 +69,100 @@
       color: $primary;
       margin-bottom: 15px;
       display: block;  
+    }
+    &.transparent {
+      background-color: transparent;
+    }
+  }
+}
+
+.color-list {
+  margin-top: 1.5rem;
+  a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.25rem;
+    border: 0;
+    margin-right: 1rem;
+    &.active {
+      border: 3px solid $teal
+    }
+    &.red {
+      background-color: red;
+    }
+    &.gray {
+      background-color: $gray;
+    }
+    &.black {
+      background-color: $black;
+    }
+    &.orange {
+      background-color: orange;
+    }
+  }
+}
+
+.highlight-orange {
+  padding: 0.5rem;
+  background-color: rgba(255, 153, 51, 0.3);
+  border-radius: 0.25rem;
+  display: inline-block;
+  font-size: large;
+  color: $dark_gray;
+  span {
+    color: $orange
+  }
+}
+
+.promo-highlist {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin-right: 2rem;
+      i {
+        color: #46afbb;
+      }
+    }
+  }
+}
+
+.promo-spesifikasi {
+  padding: 0 2rem 2rem 3rem;
+  .nav {
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    &.nav-tabs {
+      border: 0;
+      .nav-item {
+        .nav-link {
+          border: 0;
+          padding-left: 0;
+          color: $gray;
+          &.active {
+            border: 0;
+            color: $teal;
+          }
+          &:hover {
+            border: 0;
+            color: $teal;
+          }
+        }
+      }
+    }
+  }
+  .container-box {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: $light_gray;
+    border: 3px solid #f1f1f1;
+    border-radius: 1rem;
+    i {
+      display: block;
+      color: $dark_teal;
+      font-size: xx-large;
     }
   }
 }

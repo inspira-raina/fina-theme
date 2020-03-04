@@ -14,7 +14,7 @@
 }
 .nav-pills {
   .nav-link {
-    font-weight: 800;
+    font-weight: 700;
     padding: 20px 30px 20px 30px;
     text-transform: uppercase;
     background-color: #e1f5f7;
@@ -27,7 +27,7 @@
 
 .btn {
   font-size: 10pt;
-  font-weight: 800;
+  font-weight: 700;
   padding: 15px 25px;
   letter-spacing: 1px;
   border-radius: 10px;
@@ -59,6 +59,18 @@
   }
 }
 
+.btn-white {
+  font-size: 10pt;
+  font-weight: 700;
+  padding: 1rem 3rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background-color: #FFF;
+  color: $primary;
+  border-color: transparent;
+  text-transform: uppercase;
+}
+
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
@@ -82,4 +94,23 @@
       background-color: $light_blue !important;    
     }  
   }    
+}
+
+.carousel {
+  .carousel-indicators {
+    li {
+      width: 0.75rem;
+      height: 0.75rem;
+      border-radius: 50%;
+      margin-right: 0.75rem;
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      .carousel-item-inside {
+        background-color: $teal;
+        padding: 0 10%;
+      }
+    }
+  }
 }
