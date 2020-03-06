@@ -60,6 +60,8 @@
 
 .btn-up {
   right: 5rem!important;
+  bottom: 5%;
+  position: fixed;
 }
 
 //Paket page
@@ -93,11 +95,24 @@
     label {
       color: rgb(155, 153, 153);
       font-size: 14px;
+      .info-btn {
+        color: $gray;
+        font-weight: 300;
+        font-size: small;
+        border: 0;
+        background-color: transparent;
+      }
     }
     .input-group-text {
       background-color: transparent;
       border: none;
       padding: 0px 0 0 20px;
+      &.simulasi {
+        label {
+          margin-bottom: 0;
+          margin-left: 0.5rem;
+        }
+      }
       .flaticon-placeholder {
         font-size: 25px;
         color: #03aebb;
@@ -243,7 +258,8 @@ body {
     .button-search {
       font-size: x-large;
       width: 100px!important;
-      position: absolute;
+      position: fixed;
+      top: 60%;
       right: 0;
     }
   }
