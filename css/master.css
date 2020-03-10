@@ -235,6 +235,7 @@ header.masthead {
   background-color: #03aeBB;
   background-attachment: scroll;
   position: relative;
+  height: 50vh;
   background-size: cover;
 }
 
