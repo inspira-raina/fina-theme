@@ -64,112 +64,220 @@
         </div>
       </div>
     </div>
-    <div id="form-simulasi-wrapper" class="container">
-      <div id="form-simulasi" class="form-header card">
-        <form class="card-body">
-          <div class="row align-items-center">
-            <div class="col">
-              <div class="form-group">
-                <label for="">Harga Kendaraan</label>
-                <select class="custom-select">
-                  <option selected>500 - 700 juta</option>
-                </select>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-group">
-                <label for="">Uang Muka</label>
-                <div class="custom-select-wrapper">
-                  <select id="select-percentage" class="custom-select">
-                    <option selected>30%</option>
-                  </select>
-                  <select id="select-amount" class="custom-select">
-                    <option selected>Rp. 120.000.000</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-group">
-                <label for="">Zona Wilayah</label>
-                <select class="custom-select">
-                  <option selected>Civic</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col">
-              <div class="form-group">
-                <label for="">Tipe Konsumen</label>
-                <div class="input-group-text simulasi p-0">
-                  <input id="KonsumenPerorangan" type="radio" aria-label="Radio button for following text input">
-                  <label for="KonsumenPerorangan">Perorangan</label>
-
-                  <input class="ml-3" id="KonsumenBadanUsaha" type="radio" aria-label="Radio button for following text input">
-                  <label for="KonsumenBadanUsaha">Badan Usaha</label>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-group">
-                <label for="">Jenis Kendaran</label>
-                <select class="custom-select">
-                  <option selected>Comercial</option>
-                </select>
-              </div>
-            </div>
-            <div class="col"></div>
-            <div class="col"></div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col">
-              <div class="form-group">
-                <label for="">Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#asuransiModal"><i class="fas fa-info"></i></button></label>
-                <select class="custom-select">
-                  <option selected>Pilih Asuransi</option>
-                </select>
-              </div>
-            </div>
-            <div class="col">
-              <div class="form-group">
-                <label for="">Perluasan Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#PerluasanAsuransiModal"><i class="fas fa-info"></i></button></label>
-                <div class="input-group-text simulasi p-0 mb-3">
-                  <input id="" type="checkbox" aria-label="">
-                  <label for="">RSCC</label>
-
-                  <input class="ml-5" id="" type="checkbox" aria-label="">
-                  <label for="">RSMB</label>
-                </div>
-                <div class="input-group-text simulasi p-0">
-                  <input id="" type="radio" aria-label="">
-                  <label for="">TJH 10 JT</label>
-
-                  <input class="ml-3" id="" type="radio" aria-label="">
-                  <label for="">TJH 25 JT</label>
-
-                  <input class="ml-3" id="" type="radio" aria-label="">
-                  <label for="">TJH 50 JT</label>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col"></div>
-            <div class="col">
-              <button class="btn btn-info">Simulasikan</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    
   </header>
   
   <section id="simulasi-result">
-    <div class="container">
+    <div id="form-simulasi-wrapper" class="container">
+      <div id="form-simulasi" class="form-header card">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="kredit-tab" data-toggle="tab" href="#kredit" role="tab" aria-controls="kredit" aria-selected="true">Kredit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="budget-tab" data-toggle="tab" href="#budget" role="tab" aria-controls="budget" aria-selected="false">Budget</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="kredit" role="tabpanel" aria-labelledby="kredit-tab">
+              <form class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Harga Kendaraan</label>
+                      <select class="custom-select">
+                        <option selected>500 - 700 juta</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Uang Muka</label>
+                      <div class="custom-select-wrapper">
+                        <select id="select-percentage" class="custom-select">
+                          <option selected>30%</option>
+                        </select>
+                        <select id="select-amount" class="custom-select">
+                          <option selected>Rp. 120.000.000</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Zona Wilayah</label>
+                      <select class="custom-select">
+                        <option selected>Civic</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Tipe Konsumen</label>
+                      <div class="input-group-text simulasi p-0">
+                        <input id="KonsumenPerorangan" type="radio" aria-label="Radio button for following text input">
+                        <label for="KonsumenPerorangan">Perorangan</label>
+      
+                        <input class="ml-3" id="KonsumenBadanUsaha" type="radio" aria-label="Radio button for following text input">
+                        <label for="KonsumenBadanUsaha">Badan Usaha</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Jenis Kendaran</label>
+                      <select class="custom-select">
+                        <option selected>Comercial</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col"></div>
+                  <div class="col"></div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#asuransiModal"><i class="fas fa-info"></i></button></label>
+                      <select class="custom-select">
+                        <option selected>Pilih Asuransi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Perluasan Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#PerluasanAsuransiModal"><i class="fas fa-info"></i></button></label>
+                      <div class="input-group-text simulasi p-0 mb-3">
+                        <input id="" type="checkbox" aria-label="">
+                        <label for="">RSCC</label>
+      
+                        <input class="ml-5" id="" type="checkbox" aria-label="">
+                        <label for="">RSMB</label>
+                      </div>
+                      <div class="input-group-text simulasi p-0">
+                        <input id="" type="radio" aria-label="">
+                        <label for="">TJH 10 JT</label>
+      
+                        <input class="ml-3" id="" type="radio" aria-label="">
+                        <label for="">TJH 25 JT</label>
+      
+                        <input class="ml-3" id="" type="radio" aria-label="">
+                        <label for="">TJH 50 JT</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col"></div>
+                  <div class="col">
+                    <button class="btn btn-info">Simulasikan</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+          <div class="tab-pane fade" id="budget" role="tabpanel" aria-labelledby="budget-tab">
+              <form class="card-body">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Harga Kendaraan</label>
+                      <select class="custom-select">
+                        <option selected>500 - 700 juta</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Budget</label>
+                      <select class="custom-select">
+                        <option selected>Angsuran</option>
+                        <option selected>Pembayaran Pertama</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Nominal</label>
+                      <input type="text" placeholder="Rp" class="input-simulasi">
+                    </div>
+                  </div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Tipe Konsumen</label>
+                      <div class="input-group-text simulasi p-0">
+                        <input id="KonsumenPerorangan" type="radio" aria-label="Radio button for following text input">
+                        <label for="KonsumenPerorangan">Perorangan</label>
+      
+                        <input class="ml-3" id="KonsumenBadanUsaha" type="radio" aria-label="Radio button for following text input">
+                        <label for="KonsumenBadanUsaha">Badan Usaha</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Jenis Kendaran</label>
+                      <select class="custom-select">
+                        <option selected>Comercial</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Zona Wilayah</label>
+                      <select class="custom-select">
+                        <option selected>Civic</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#asuransiModal"><i class="fas fa-info"></i></button></label>
+                      <select class="custom-select">
+                        <option selected>Pilih Asuransi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group">
+                      <label for="">Perluasan Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#PerluasanAsuransiModal"><i class="fas fa-info"></i></button></label>
+                      <div class="input-group-text simulasi p-0 mb-3">
+                        <input id="" type="checkbox" aria-label="">
+                        <label for="">RSCC</label>
+      
+                        <input class="ml-5" id="" type="checkbox" aria-label="">
+                        <label for="">RSMB</label>
+                      </div>
+                      <div class="input-group-text simulasi p-0">
+                        <input id="" type="radio" aria-label="">
+                        <label for="">TJH 10 JT</label>
+      
+                        <input class="ml-3" id="" type="radio" aria-label="">
+                        <label for="">TJH 25 JT</label>
+      
+                        <input class="ml-3" id="" type="radio" aria-label="">
+                        <label for="">TJH 50 JT</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col"></div>
+                  <div class="col">
+                    <button class="btn btn-info">Simulasikan</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
       <div class="row">
         <div class="col">
-          <div class="section-heading">
+          <div class="section-heading mb-1">
             <h2>Hasil Simulasi</h2>
           </div>
         </div>

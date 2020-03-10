@@ -130,3 +130,14 @@ img::-moz-selection {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.input-simulasi {
+  border: 0;
+  border-bottom: 1px solid $gray;
+  background-color: transparent;
+  padding: 5px 0 8px;
+  outline: transparent;
+  display: block;
+  &:focus {
+    outline: transparent;
+  }
+}

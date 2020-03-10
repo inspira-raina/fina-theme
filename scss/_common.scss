@@ -316,12 +316,30 @@ body {
 #form-simulasi-wrapper {
   position: relative;
   #form-simulasi {
-    position: absolute;
-    bottom: -60px;
+    position: relative;
     width: 100%;
-    left: 0;
     background:#e1f5f7;
-
+    .nav {
+      &.nav-tabs {
+        margin: 0;
+        .nav-item {
+          .nav-link {
+            padding: 1rem 2rem;
+            &.active {
+              background-color: transparent;
+              border: 0;
+              border-bottom: 2px solid $teal;
+              color: $teal;
+            }
+            &:hover {
+              border: 0;
+              border-bottom: 2px solid $teal;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
     .custom-select-wrapper {
       display: flex;
       align-items: center;
@@ -340,8 +358,9 @@ body {
 }
 
 #simulasi-result {
-  padding: 40px 0;
-
+  padding: 0;
+  top: -12rem;
+  position: relative;
   .white-background {
     margin: 20px 0;
     padding: 20px;
