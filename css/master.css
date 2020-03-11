@@ -41,6 +41,7 @@ a {
 a:focus, a:hover {
   color: #03aeBB;
   text-decoration: none;
+  outline: 0;
 }
 
 blockquote {
@@ -682,6 +683,18 @@ footer .store-logo__link {
   color: #FFFFFF;
   background-color: #028b95 !important;
   border-color: #028b95 !important;
+}
+
+.btn-down-arrow {
+  border-color: transparent;
+  color: #03aeBB;
+  background-color: transparent;
+}
+
+.btn-down-arrow:hover, .btn-down-arrow:focus, .btn-down-arrow:active {
+  color: #03aeBB;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .btn-white {
@@ -1441,4 +1454,46 @@ body {
 
 #register-modal .button-text-wrapper .form-control-text, #forgot-password-modal .button-text-wrapper .form-control-text {
   flex: 1;
+}
+
+.partner-content .nav.nav-tabs {
+  margin: 0;
+  border-color: transparent;
+}
+
+.partner-content .nav.nav-tabs .nav-item .nav-link {
+  padding: 1rem 2rem 1rem 0;
+}
+
+.partner-content .nav.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #03aeBB;
+  font-weight: 700;
+}
+
+.partner-content .nav.nav-tabs .nav-item .nav-link:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.partner-content .model-mobil-tabs .nav.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #03aeBB;
+  font-weight: 700;
+}
+
+.partner-content .model-mobil-tabs .nav.nav-tabs .nav-item .nav-link:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.partner-content .model-mobil-tabs .tab-content {
+  padding-top: 1rem;
+}
+
+.merek-mobil {
+  width: 2rem;
+  height: auto;
 }

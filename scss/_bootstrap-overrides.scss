@@ -58,7 +58,18 @@
     border-color: darken($primary, 7.5) !important;
   }
 }
-
+.btn-down-arrow {
+  border-color: transparent;
+  color: $primary;
+  background-color: transparent;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
 .btn-white {
   font-size: 10pt;
   font-weight: 700;

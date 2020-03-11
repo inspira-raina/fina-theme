@@ -505,3 +505,54 @@ body {
     }
   }
 }
+
+.partner-content {
+  .nav {
+    &.nav-tabs {
+      margin: 0;
+      border-color: transparent;
+      .nav-item {
+        .nav-link {
+          padding: 1rem 2rem 1rem 0;
+          &.active {
+            background-color: transparent;
+            border-color: transparent;
+            color: $teal;
+            font-weight: 700;
+          }
+          &:hover {
+            border-color: transparent;
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  .model-mobil-tabs {
+    .nav {
+      &.nav-tabs {
+        .nav-item {
+          .nav-link {
+            &.active {
+              background-color: transparent;
+              border-color: transparent;
+              color: $teal;
+              font-weight: 700;
+            }
+            &:hover {
+              border-color: transparent;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+    .tab-content {
+      padding-top: 1rem
+    }
+  }
+}
+.merek-mobil {
+  width: 2rem;
+  height: auto;
+}
