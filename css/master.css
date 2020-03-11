@@ -1147,9 +1147,9 @@ body {
 
 .promo-slider {
   max-width: 680px;
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 500px;
+  top: 60%;
 }
 
 .promo-slider .trigger-button .button-search, .promo-slider .slider-header {
@@ -1274,7 +1274,7 @@ body {
 
 #simulasi-result {
   padding: 0;
-  top: -12rem;
+  top: -10rem;
   position: relative;
 }
 

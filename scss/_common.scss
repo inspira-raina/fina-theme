@@ -232,9 +232,9 @@ body {
 
 .promo-slider {
   max-width: 680px;
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 500px;
+  top: 60%;
 
   .trigger-button .button-search, .slider-header {
     background-color: #03aebb;
@@ -359,7 +359,7 @@ body {
 
 #simulasi-result {
   padding: 0;
-  top: -12rem;
+  top: -10rem;
   position: relative;
   .white-background {
     margin: 20px 0;
