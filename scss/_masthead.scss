@@ -16,6 +16,7 @@ header.masthead {
   background-color: $primary;
   background-attachment: scroll;
   position: relative;
+  height: 50vh;
   @include background-cover;  
   #home-slider {
     margin-top: 5rem;

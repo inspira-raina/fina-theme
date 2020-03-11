@@ -156,6 +156,19 @@ img::-moz-selection {
   background-size: cover;
 }
 
+.input-simulasi {
+  border: 0;
+  border-bottom: 1px solid #B5B6B7;
+  background-color: transparent;
+  padding: 5px 0 8px;
+  outline: transparent;
+  display: block;
+}
+
+.input-simulasi:focus {
+  outline: transparent;
+}
+
 .navbar {
   background-color: #03aeBB !important;
 }
@@ -222,6 +235,7 @@ header.masthead {
   background-color: #03aeBB;
   background-attachment: scroll;
   position: relative;
+  height: 50vh;
   background-size: cover;
 }
 
@@ -962,6 +976,8 @@ footer .store-logo__link {
 
 .btn-up {
   right: 5rem !important;
+  bottom: 5%;
+  position: fixed;
 }
 
 .form-header {
@@ -997,10 +1013,23 @@ footer .store-logo__link {
   font-size: 14px;
 }
 
+.form-header .form-group label .info-btn {
+  color: #B5B6B7;
+  font-weight: 300;
+  font-size: small;
+  border: 0;
+  background-color: transparent;
+}
+
 .form-header .form-group .input-group-text {
   background-color: transparent;
   border: none;
   padding: 0px 0 0 20px;
+}
+
+.form-header .form-group .input-group-text.simulasi label {
+  margin-bottom: 0;
+  margin-left: 0.5rem;
 }
 
 .form-header .form-group .input-group-text .flaticon-placeholder {
@@ -1147,7 +1176,8 @@ body {
 .promo-slider .trigger-button .button-search {
   font-size: x-large;
   width: 100px !important;
-  position: absolute;
+  position: fixed;
+  top: 60%;
   right: 0;
 }
 
@@ -1200,11 +1230,30 @@ body {
 }
 
 #form-simulasi-wrapper #form-simulasi {
-  position: absolute;
-  bottom: -60px;
+  position: relative;
   width: 100%;
-  left: 0;
   background: #e1f5f7;
+}
+
+#form-simulasi-wrapper #form-simulasi .nav.nav-tabs {
+  margin: 0;
+}
+
+#form-simulasi-wrapper #form-simulasi .nav.nav-tabs .nav-item .nav-link {
+  padding: 1rem 2rem;
+}
+
+#form-simulasi-wrapper #form-simulasi .nav.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #03aeBB;
+  color: #03aeBB;
+}
+
+#form-simulasi-wrapper #form-simulasi .nav.nav-tabs .nav-item .nav-link:hover {
+  border: 0;
+  border-bottom: 2px solid #03aeBB;
+  background-color: transparent;
 }
 
 #form-simulasi-wrapper #form-simulasi .custom-select-wrapper {
@@ -1224,7 +1273,9 @@ body {
 }
 
 #simulasi-result {
-  padding: 40px 0;
+  padding: 0;
+  top: -12rem;
+  position: relative;
 }
 
 #simulasi-result .white-background {
