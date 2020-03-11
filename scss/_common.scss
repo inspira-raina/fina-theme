@@ -302,7 +302,6 @@ body {
     -webkit-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.4);
     box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.4);
-    
     .row {
     .input-group {
       padding: 20px 0;
@@ -316,9 +315,15 @@ body {
 #form-simulasi-wrapper {
   position: relative;
   #form-simulasi {
+    -webkit-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 25px 0px rgba(0,0,0,0.1);
     position: relative;
     width: 100%;
     background:#e1f5f7;
+    .card-body {
+      padding: 2rem
+    }
     .nav {
       &.nav-tabs {
         margin: 0;
@@ -327,12 +332,12 @@ body {
             padding: 1rem 2rem;
             &.active {
               background-color: transparent;
-              border: 0;
+              border-color: transparent;
               border-bottom: 2px solid $teal;
               color: $teal;
             }
             &:hover {
-              border: 0;
+              border-color: transparent;
               border-bottom: 2px solid $teal;
               background-color: transparent;
             }
@@ -363,7 +368,29 @@ body {
   position: relative;
   .white-background {
     margin: 20px 0;
-    padding: 20px;
+    padding: 3rem 2.5rem;
+  }
+  .nav {
+    &.nav-tabs {
+      margin: 0;
+      .nav-item {
+        .nav-link {
+          padding: 1rem 2rem;
+          &.active {
+            background-color: transparent;
+            border-color: transparent;
+            color: $teal;
+            font-weight: 700;
+            border-bottom: 2px solid $teal;
+          }
+          &:hover {
+            border-color: transparent;
+            background-color: transparent;
+            border-bottom: 2px solid $teal;
+          }
+        }
+      }
+    }
   }
 
   .result-nav {

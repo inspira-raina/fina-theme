@@ -80,95 +80,97 @@
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="kredit" role="tabpanel" aria-labelledby="kredit-tab">
               <form class="card-body">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Harga Kendaraan</label>
-                      <select class="custom-select">
-                        <option selected>500 - 700 juta</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Uang Muka</label>
-                      <div class="custom-select-wrapper">
-                        <select id="select-percentage" class="custom-select">
-                          <option selected>30%</option>
-                        </select>
-                        <select id="select-amount" class="custom-select">
-                          <option selected>Rp. 120.000.000</option>
-                        </select>
+                <div class="row">
+                  <div class="col-md-10">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Harga Kendaraan</label>
+                          <select class="custom-select">
+                            <option selected>500 - 700 juta</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Uang Muka</label>
+                          <div class="custom-select-wrapper">
+                            <select id="select-percentage" class="custom-select">
+                              <option selected>30%</option>
+                            </select>
+                            <select id="select-amount" class="custom-select">
+                              <option selected>Rp. 120.000.000</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Zona Wilayah</label>
+                          <select class="custom-select">
+                            <option selected>Civic</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Zona Wilayah</label>
-                      <select class="custom-select">
-                        <option selected>Civic</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Tipe Konsumen</label>
-                      <div class="input-group-text simulasi p-0">
-                        <input id="KonsumenPerorangan" type="radio" aria-label="Radio button for following text input">
-                        <label for="KonsumenPerorangan">Perorangan</label>
-      
-                        <input class="ml-3" id="KonsumenBadanUsaha" type="radio" aria-label="Radio button for following text input">
-                        <label for="KonsumenBadanUsaha">Badan Usaha</label>
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Tipe Konsumen</label>
+                          <div class="input-group-text simulasi p-0">
+                            <input id="KonsumenPerorangan" type="radio" aria-label="Radio button for following text input">
+                            <label for="KonsumenPerorangan">Perorangan</label>
+          
+                            <input class="ml-3" id="KonsumenBadanUsaha" type="radio" aria-label="Radio button for following text input">
+                            <label for="KonsumenBadanUsaha">Badan Usaha</label>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Jenis Kendaran</label>
-                      <select class="custom-select">
-                        <option selected>Comercial</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col"></div>
-                  <div class="col"></div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#asuransiModal"><i class="fas fa-info"></i></button></label>
-                      <select class="custom-select">
-                        <option selected>Pilih Asuransi</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Perluasan Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#PerluasanAsuransiModal"><i class="fas fa-info"></i></button></label>
-                      <div class="input-group-text simulasi p-0 mb-3">
-                        <input id="" type="checkbox" aria-label="">
-                        <label for="">RSCC</label>
-      
-                        <input class="ml-5" id="" type="checkbox" aria-label="">
-                        <label for="">RSMB</label>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Jenis Kendaran</label>
+                          <select class="custom-select">
+                            <option selected>Comercial</option>
+                          </select>
+                        </div>
                       </div>
-                      <div class="input-group-text simulasi p-0">
-                        <input id="" type="radio" aria-label="">
-                        <label for="">TJH 10 JT</label>
-      
-                        <input class="ml-3" id="" type="radio" aria-label="">
-                        <label for="">TJH 25 JT</label>
-      
-                        <input class="ml-3" id="" type="radio" aria-label="">
-                        <label for="">TJH 50 JT</label>
+                      <div class="col"></div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#asuransiModal"><i class="fas fa-info"></i></button></label>
+                          <select class="custom-select">
+                            <option selected>Pilih Asuransi</option>
+                          </select>
+                        </div>
                       </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Perluasan Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#PerluasanAsuransiModal"><i class="fas fa-info"></i></button></label>
+                          <div class="input-group-text simulasi p-0 mb-3">
+                            <input id="" type="checkbox" aria-label="">
+                            <label for="">RSCC</label>
+          
+                            <input class="ml-5" id="" type="checkbox" aria-label="">
+                            <label for="">RSMB</label>
+                          </div>
+                          <div class="input-group-text simulasi p-0">
+                            <input id="" type="radio" aria-label="">
+                            <label for="">TJH 10 JT</label>
+          
+                            <input class="ml-3" id="" type="radio" aria-label="">
+                            <label for="">TJH 25 JT</label>
+          
+                            <input class="ml-3" id="" type="radio" aria-label="">
+                            <label for="">TJH 50 JT</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col"></div>
                     </div>
                   </div>
-                  
-                  <div class="col"></div>
-                  <div class="col">
+                  <div class="col-md-2 d-flex align-items-center border-left-teal">
                     <button class="btn btn-info">Simulasikan</button>
                   </div>
                 </div>
@@ -176,96 +178,98 @@
           </div>
           <div class="tab-pane fade" id="budget" role="tabpanel" aria-labelledby="budget-tab">
               <form class="card-body">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Harga Kendaraan</label>
-                      <select class="custom-select">
-                        <option selected>500 - 700 juta</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Budget</label>
-                      <select class="custom-select">
-                        <option selected>Angsuran</option>
-                        <option selected>Pembayaran Pertama</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Nominal</label>
-                      <input type="text" placeholder="Rp" class="input-simulasi">
-                    </div>
-                  </div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Tipe Konsumen</label>
-                      <div class="input-group-text simulasi p-0">
-                        <input id="KonsumenPerorangan" type="radio" aria-label="Radio button for following text input">
-                        <label for="KonsumenPerorangan">Perorangan</label>
-      
-                        <input class="ml-3" id="KonsumenBadanUsaha" type="radio" aria-label="Radio button for following text input">
-                        <label for="KonsumenBadanUsaha">Badan Usaha</label>
+                <div class="row">
+                  <div class="col-md-10">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Harga Kendaraan</label>
+                          <select class="custom-select">
+                            <option selected>500 - 700 juta</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Budget</label>
+                          <select class="custom-select">
+                            <option selected>Angsuran</option>
+                            <option selected>Pembayaran Pertama</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Nominal</label>
+                          <input type="text" placeholder="Rp" class="input-simulasi">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Jenis Kendaran</label>
-                      <select class="custom-select">
-                        <option selected>Comercial</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Zona Wilayah</label>
-                      <select class="custom-select">
-                        <option selected>Civic</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col"></div>
-                </div>
-                <div class="row align-items-center">
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#asuransiModal"><i class="fas fa-info"></i></button></label>
-                      <select class="custom-select">
-                        <option selected>Pilih Asuransi</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="form-group">
-                      <label for="">Perluasan Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#PerluasanAsuransiModal"><i class="fas fa-info"></i></button></label>
-                      <div class="input-group-text simulasi p-0 mb-3">
-                        <input id="" type="checkbox" aria-label="">
-                        <label for="">RSCC</label>
-      
-                        <input class="ml-5" id="" type="checkbox" aria-label="">
-                        <label for="">RSMB</label>
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Tipe Konsumen</label>
+                          <div class="input-group-text simulasi p-0">
+                            <input id="KonsumenPerorangan" type="radio" aria-label="Radio button for following text input">
+                            <label for="KonsumenPerorangan">Perorangan</label>
+          
+                            <input class="ml-3" id="KonsumenBadanUsaha" type="radio" aria-label="Radio button for following text input">
+                            <label for="KonsumenBadanUsaha">Badan Usaha</label>
+                          </div>
+                        </div>
                       </div>
-                      <div class="input-group-text simulasi p-0">
-                        <input id="" type="radio" aria-label="">
-                        <label for="">TJH 10 JT</label>
-      
-                        <input class="ml-3" id="" type="radio" aria-label="">
-                        <label for="">TJH 25 JT</label>
-      
-                        <input class="ml-3" id="" type="radio" aria-label="">
-                        <label for="">TJH 50 JT</label>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Jenis Kendaran</label>
+                          <select class="custom-select">
+                            <option selected>Comercial</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Zona Wilayah</label>
+                          <select class="custom-select">
+                            <option selected>Civic</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#asuransiModal"><i class="fas fa-info"></i></button></label>
+                          <select class="custom-select">
+                            <option selected>Pilih Asuransi</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-group">
+                          <label for="">Perluasan Asuransi <button type="button" class="info-btn" data-toggle="modal" data-target="#PerluasanAsuransiModal"><i class="fas fa-info"></i></button></label>
+                          <div class="input-group-text simulasi p-0 mb-3">
+                            <input id="" type="checkbox" aria-label="">
+                            <label for="">RSCC</label>
+          
+                            <input class="ml-5" id="" type="checkbox" aria-label="">
+                            <label for="">RSMB</label>
+                          </div>
+                          <div class="input-group-text simulasi p-0">
+                            <input id="" type="radio" aria-label="">
+                            <label for="">TJH 10 JT</label>
+          
+                            <input class="ml-3" id="" type="radio" aria-label="">
+                            <label for="">TJH 25 JT</label>
+          
+                            <input class="ml-3" id="" type="radio" aria-label="">
+                            <label for="">TJH 50 JT</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col"></div>
+                    </div>
                   </div>
-                  
-                  <div class="col"></div>
-                  <div class="col">
+                  <div class="col-md-2 d-flex align-items-center border-left-teal">
                     <button class="btn btn-info">Simulasikan</button>
                   </div>
                 </div>
@@ -277,86 +281,159 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col">
-          <div class="section-heading mb-1">
-            <h2>Hasil Simulasi</h2>
+          <div class="section-heading mb-3 mt-5">
+            <h2 class="pl-5">Hasil Simulasi</h2>
           </div>
         </div>
       </div>
       <div class="row white-background">
         <div class="col">
-          <div class="result-nav">
-            <div class="addm-wrapper active">
-              ADDM Prepaid
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="Prepaid-tab" data-toggle="tab" href="#Prepaid" role="tab" aria-controls="Prepaid" aria-selected="true">ADDM Prepaid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Onloan-tab" data-toggle="tab" href="#Onloan" role="tab" aria-controls="Onloan" aria-selected="false">ADDM Onloan</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="Prepaid" role="tabpanel" aria-labelledby="Prepaid-tab">
+              <div class="addm-explainer">
+                Addm Prepaid adalah asuransi dan angsuran dibayarkan dimuka
+              </div>
+              <div class="table-result">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Tenor</th>
+                        <th>Asuransi</th>
+                        <th>Total Bayar Pertama</th>
+                        <th>Angsuran</th>
+                        <th>&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th rowspan="2" scope="row">1 Tahun</th>
+                        <td>Comprehensive</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>TLO</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+    
+                      <tr class="has-bg-color">
+                        <th rowspan="2" scope="row">2 Tahun</th>
+                        <td>Comprehensive</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="has-bg-color">
+                        <td>TLO</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
-            <div class="addm-wrapper">
-              ADDM Onloan
-            </div>
-          </div>
-          <div class="addm-explainer">
-            Addm Prepaid adalah asuransi dan angsuran dibayarkan dimuka
-          </div>
-          <div class="table-result">
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Tenor</th>
-                    <th>Asuransi</th>
-                    <th>Total Bayar Pertama</th>
-                    <th>Angsuran</th>
-                    <th>&nbsp;</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th rowspan="2" scope="row">1 Tahun</th>
-                    <td>Comprehensive</td>
-                    <td>Rp. 272.176.000</td>
-                    <td>Rp. 44.582.000</td>
-                    <td class="action-wrapper">
-                      <div class="action-button">
-                        <i class="la la-pencil"></i>
-                        <div class="link-text">APPLY</div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>TLO</td>
-                    <td>Rp. 272.176.000</td>
-                    <td>Rp. 44.582.000</td>
-                    <td class="action-wrapper">
-                      <div class="action-button">
-                        <i class="la la-pencil"></i>
-                        <div class="link-text">APPLY</div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr class="has-bg-color">
-                    <th rowspan="2" scope="row">2 Tahun</th>
-                    <td>Comprehensive</td>
-                    <td>Rp. 272.176.000</td>
-                    <td>Rp. 44.582.000</td>
-                    <td class="action-wrapper">
-                      <div class="action-button">
-                        <i class="la la-pencil"></i>
-                        <div class="link-text">APPLY</div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr class="has-bg-color">
-                    <td>TLO</td>
-                    <td>Rp. 272.176.000</td>
-                    <td>Rp. 44.582.000</td>
-                    <td class="action-wrapper">
-                      <div class="action-button">
-                        <i class="la la-pencil"></i>
-                        <div class="link-text">APPLY</div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="tab-pane fade" id="Onloan" role="tabpanel" aria-labelledby="Onloan-tab">
+              <div class="addm-explainer">
+                Addm Prepaid adalah asuransi dan angsuran dibayarkan dimuka
+              </div>
+              <div class="table-result">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Tenor</th>
+                        <th>Asuransi</th>
+                        <th>Total Bayar Pertama</th>
+                        <th>Angsuran</th>
+                        <th>&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th rowspan="2" scope="row">1 Tahun</th>
+                        <td>Comprehensive</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>TLO</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+    
+                      <tr class="has-bg-color">
+                        <th rowspan="2" scope="row">2 Tahun</th>
+                        <td>Comprehensive</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="has-bg-color">
+                        <td>TLO</td>
+                        <td>Rp. 272.176.000</td>
+                        <td>Rp. 44.582.000</td>
+                        <td class="action-wrapper">
+                          <div class="action-button">
+                            <i class="la la-pencil"></i>
+                            <div class="link-text">APPLY</div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>

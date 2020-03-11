@@ -141,3 +141,7 @@ img::-moz-selection {
     outline: transparent;
   }
 }
+
+.border-left-teal {
+  border-left: 2px solid $teal-opac60;
+}
