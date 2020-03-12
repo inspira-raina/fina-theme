@@ -738,6 +738,30 @@ footer .store-logo__link {
   padding: 0 10%;
 }
 
+.btn-group.btn-group-toggle .btn {
+  cursor: pointer;
+}
+
+.btn-group.btn-group-toggle .btn.btn-secondary {
+  background-color: transparent;
+  border-color: transparent;
+  color: #1A1A1A;
+  border: 0;
+  outline: none;
+  opacity: 0.4;
+}
+
+.btn-group.btn-group-toggle .btn.btn-secondary.active {
+  opacity: 1;
+  border: 0;
+  outline: none;
+}
+
+input[type="radio"]:checked:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 .promo-section {
   margin-bottom: 5rem;
 }
@@ -1496,6 +1520,7 @@ body {
 .merek-mobil {
   width: 2rem;
   height: auto;
+  margin-right: 0.5rem;
 }
 
 .spesifikasi {
