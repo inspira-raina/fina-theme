@@ -29,6 +29,7 @@ a {
   &:hover {
     color: $primary;
     text-decoration: none;
+    outline: 0;
   }
 }
 
@@ -140,4 +141,8 @@ img::-moz-selection {
   &:focus {
     outline: transparent;
   }
+}
+
+.border-left-teal {
+  border-left: 2px solid $teal-opac60;
 }

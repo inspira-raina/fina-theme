@@ -41,6 +41,7 @@ a {
 a:focus, a:hover {
   color: #03aeBB;
   text-decoration: none;
+  outline: 0;
 }
 
 blockquote {
@@ -167,6 +168,10 @@ img::-moz-selection {
 
 .input-simulasi:focus {
   outline: transparent;
+}
+
+.border-left-teal {
+  border-left: 2px solid rgba(3, 174, 187, 0.6);
 }
 
 .navbar {
@@ -680,6 +685,18 @@ footer .store-logo__link {
   border-color: #028b95 !important;
 }
 
+.btn-down-arrow {
+  border-color: transparent;
+  color: #03aeBB;
+  background-color: transparent;
+}
+
+.btn-down-arrow:hover, .btn-down-arrow:focus, .btn-down-arrow:active {
+  color: #03aeBB;
+  background-color: transparent;
+  border-color: transparent;
+}
+
 .btn-white {
   font-size: 10pt;
   font-weight: 700;
@@ -1147,9 +1164,9 @@ body {
 
 .promo-slider {
   max-width: 680px;
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 500px;
+  top: 60%;
 }
 
 .promo-slider .trigger-button .button-search, .promo-slider .slider-header {
@@ -1230,9 +1247,14 @@ body {
 }
 
 #form-simulasi-wrapper #form-simulasi {
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
   position: relative;
   width: 100%;
   background: #e1f5f7;
+}
+
+#form-simulasi-wrapper #form-simulasi .card-body {
+  padding: 2rem;
 }
 
 #form-simulasi-wrapper #form-simulasi .nav.nav-tabs {
@@ -1245,13 +1267,13 @@ body {
 
 #form-simulasi-wrapper #form-simulasi .nav.nav-tabs .nav-item .nav-link.active {
   background-color: transparent;
-  border: 0;
+  border-color: transparent;
   border-bottom: 2px solid #03aeBB;
   color: #03aeBB;
 }
 
 #form-simulasi-wrapper #form-simulasi .nav.nav-tabs .nav-item .nav-link:hover {
-  border: 0;
+  border-color: transparent;
   border-bottom: 2px solid #03aeBB;
   background-color: transparent;
 }
@@ -1274,13 +1296,35 @@ body {
 
 #simulasi-result {
   padding: 0;
-  top: -12rem;
+  top: -10rem;
   position: relative;
 }
 
 #simulasi-result .white-background {
   margin: 20px 0;
-  padding: 20px;
+  padding: 3rem 2.5rem;
+}
+
+#simulasi-result .nav.nav-tabs {
+  margin: 0;
+}
+
+#simulasi-result .nav.nav-tabs .nav-item .nav-link {
+  padding: 1rem 2rem;
+}
+
+#simulasi-result .nav.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #03aeBB;
+  font-weight: 700;
+  border-bottom: 2px solid #03aeBB;
+}
+
+#simulasi-result .nav.nav-tabs .nav-item .nav-link:hover {
+  border-color: transparent;
+  background-color: transparent;
+  border-bottom: 2px solid #03aeBB;
 }
 
 #simulasi-result .result-nav {
@@ -1410,4 +1454,46 @@ body {
 
 #register-modal .button-text-wrapper .form-control-text, #forgot-password-modal .button-text-wrapper .form-control-text {
   flex: 1;
+}
+
+.partner-content .nav.nav-tabs {
+  margin: 0;
+  border-color: transparent;
+}
+
+.partner-content .nav.nav-tabs .nav-item .nav-link {
+  padding: 1rem 2rem 1rem 0;
+}
+
+.partner-content .nav.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #03aeBB;
+  font-weight: 700;
+}
+
+.partner-content .nav.nav-tabs .nav-item .nav-link:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.partner-content .model-mobil-tabs .nav.nav-tabs .nav-item .nav-link.active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #03aeBB;
+  font-weight: 700;
+}
+
+.partner-content .model-mobil-tabs .nav.nav-tabs .nav-item .nav-link:hover {
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.partner-content .model-mobil-tabs .tab-content {
+  padding-top: 1rem;
+}
+
+.merek-mobil {
+  width: 2rem;
+  height: auto;
 }
