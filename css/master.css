@@ -240,7 +240,7 @@ header.masthead {
   background-color: #03aeBB;
   background-attachment: scroll;
   position: relative;
-  height: 50vh;
+  min-height: 45vh;
   background-size: cover;
 }
 
@@ -251,7 +251,7 @@ header.masthead #home-slider {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 20vh 0 0;
   color: white;
 }
 
@@ -259,7 +259,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 15vh 0;
   }
 }
 
@@ -1496,4 +1496,30 @@ body {
 .merek-mobil {
   width: 2rem;
   height: auto;
+}
+
+.spesifikasi {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin: 1rem auto;
+}
+
+.spesifikasi.mesin-icon {
+  background-image: url("../img/ic_specs_mesin.svg");
+}
+
+.spesifikasi.tenaga-icon {
+  background-image: url("../img/ic_specs_tenaga.svg");
+}
+
+.spesifikasi.tduduk-icon {
+  background-image: url("../img/ic_specs_tempat_duduk.svg");
+}
+
+.spesifikasi.transmisi-icon {
+  background-image: url("../img/ic_specs_jenis_transmisi.svg");
 }
