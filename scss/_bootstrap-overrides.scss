@@ -129,17 +129,40 @@
   &.btn-group-toggle {
     .btn {
       cursor: pointer;
+      margin-right: 0.5rem;
       &.btn-secondary {
         background-color: transparent;
-        border-color: transparent;
+        border: 2px solid transparent;
         color: $black;
-        border: 0;
         outline: none;
-        opacity: 0.4;
         &.active {
-          opacity: 1;
-          border: 0;
+          border: 2px solid $teal;
           outline: none;
+          border-radius: 10px !important;
+        }
+      }
+    }
+  }
+}
+
+.partner-content {
+  .btn-group {
+    &.btn-group-toggle {
+      .btn {
+        cursor: pointer;
+        margin-right: 0.5rem;
+        &.btn-secondary {
+          background-color: transparent;
+          border: 2px solid transparent;
+          color: $black;
+          outline: none;
+          &.active {
+            border: 2px solid transparent;
+            outline: none;
+            font-weight: 700;
+            color: $teal;
+            border-radius: 10px !important;
+          }
         }
       }
     }
