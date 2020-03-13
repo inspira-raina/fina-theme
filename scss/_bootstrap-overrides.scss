@@ -125,3 +125,28 @@
     }
   }
 }
+.btn-group {
+  &.btn-group-toggle {
+    .btn {
+      cursor: pointer;
+      &.btn-secondary {
+        background-color: transparent;
+        border-color: transparent;
+        color: $black;
+        border: 0;
+        outline: none;
+        opacity: 0.4;
+        &.active {
+          opacity: 1;
+          border: 0;
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+input[type="radio"]:checked:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

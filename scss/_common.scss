@@ -555,4 +555,26 @@ body {
 .merek-mobil {
   width: 2rem;
   height: auto;
+  margin-right: 0.5rem;
+}
+.spesifikasi {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  margin: 1rem auto;
+  &.mesin-icon {
+    background-image: url('../img/ic_specs_mesin.svg');
+  }
+  &.tenaga-icon {
+    background-image: url('../img/ic_specs_tenaga.svg');
+  }
+  &.tduduk-icon {
+    background-image: url('../img/ic_specs_tempat_duduk.svg');
+  }
+  &.transmisi-icon {
+    background-image: url('../img/ic_specs_jenis_transmisi.svg');
+  }
 }
