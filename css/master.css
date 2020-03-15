@@ -740,21 +740,40 @@ footer .store-logo__link {
 
 .btn-group.btn-group-toggle .btn {
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 
 .btn-group.btn-group-toggle .btn.btn-secondary {
   background-color: transparent;
-  border-color: transparent;
+  border: 2px solid transparent;
   color: #1A1A1A;
-  border: 0;
   outline: none;
-  opacity: 0.4;
 }
 
 .btn-group.btn-group-toggle .btn.btn-secondary.active {
-  opacity: 1;
-  border: 0;
+  border: 2px solid #03aeBB;
   outline: none;
+  border-radius: 10px !important;
+}
+
+.partner-content .btn-group.btn-group-toggle .btn {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.partner-content .btn-group.btn-group-toggle .btn.btn-secondary {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #1A1A1A;
+  outline: none;
+}
+
+.partner-content .btn-group.btn-group-toggle .btn.btn-secondary.active {
+  border: 2px solid transparent;
+  outline: none;
+  font-weight: 700;
+  color: #03aeBB;
+  border-radius: 10px !important;
 }
 
 input[type="radio"]:checked:focus {
